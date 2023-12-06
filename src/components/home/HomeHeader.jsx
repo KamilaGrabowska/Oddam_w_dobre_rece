@@ -15,7 +15,7 @@ const HomeHeader = () => {
                     </a>
 
                     <a className="topMenu__item" href="">
-                        <span className="topMenu__addAccount">Załóż konto</span>
+                        <span className="topMenu__add">Załóż konto</span>
                     </a>
                  </div>
                 <div className="navigation">
