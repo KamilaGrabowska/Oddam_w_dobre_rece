@@ -1,0 +1,25 @@
+.header__section{}
+
+.topMenu{
+  &__item{}
+  &__login{}
+  &__addAccount{}
+
+}
+
+.navigation{
+  &__item{}
+  &__item-active{}
+
+}
+
+
+.intro{
+  &__info{}
+  &__img{}
+  &__img{}
+  &__btn{
+    &-return{}
+    &-organize{}
+  }
+}

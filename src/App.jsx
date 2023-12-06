@@ -1,7 +1,11 @@
 import './App.css'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './components/home/Home.jsx'
-
+import OrganizationsHome from './components/organizations/OrganizationsHome.jsx'
+import LocalHome from './components/local/LocalHome.jsx'
+import LoggedInHome from  './components/logged-in/LoggedInHome.jsx'
+import Login from './components/logowanie/Login.jsx'
+import Register from './components/rejestracja/Register.jsx'
 
 
 function App ()  {
@@ -12,9 +16,9 @@ function App ()  {
       <Router>
           <Routes>
           <Route path="/" element={<Home />} />
-              {/*<Route path="/organizations" element={<OrganizationsHome />} />*/}
-              {/*<Route path="/local" element={<LocalHome />} />*/}
-              {/*<Route path="/logged-in" element={<LoggedInHome />} />*/}
+              <Route path="/organizations" element={<OrganizationsHome />} />
+              <Route path="/local" element={<LocalHome />} />
+              <Route path="/logged-in" element={<LoggedInHome />} />
               {/*<Route path="/oddaj-rzeczy" element={<FormStep1 />} />*/}
               {/*<Route path="/oddaj-rzeczy/krok-2" element={<FormStep2 />} />*/}
               {/*<Route path="/oddaj-rzeczy/krok-2/select" element={<FormStep2OpenedSelect />} />*/}
@@ -23,8 +27,8 @@ function App ()  {
               {/*<Route path="/oddaj-rzeczy/krok-4" element={<FormStep4 />} />*/}
               {/*<Route path="/oddaj-rzeczy/summary" element={<FormSummary />} />*/}
               {/*<Route path="/oddaj-rzeczy/thank-you" element={<FormThankYou />} />*/}
-              {/*<Route path="/logowanie" element={<Login />} />*/}
-              {/*<Route path="/rejestracja" element={<Register />} />*/}
+              <Route path="/logowanie" element={<Login />} />
+              <Route path="/rejestracja" element={<Register />} />
               {/*<Route path="/wylogowano" element={<Logout />} />*/}
           </Routes>
       </Router>
