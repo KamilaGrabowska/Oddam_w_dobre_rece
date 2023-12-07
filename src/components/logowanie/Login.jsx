@@ -1,7 +1,7 @@
 const Login = () => {
     return (
        <div>
-           <h1>cos tam </h1>
+           <h1>Logowanie  </h1>
 
        </div>
 

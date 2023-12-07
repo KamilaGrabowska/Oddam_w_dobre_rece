@@ -6,7 +6,6 @@ import HeroImage from '../../assets/images/Hero_Image.png'
 const HomeHeader = () => {
     return (
         <header>
-            <ScrollLink />
             <div className="header__section">
                 <div className="hero">
                 <img className="hero__img" src={HeroImage} alt="Hero Image" align="left"/>
