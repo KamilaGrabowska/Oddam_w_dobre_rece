@@ -6,40 +6,38 @@ import HeroImage from '../../assets/images/Hero_Image.png'
 const HomeHeader = () => {
     return (
         <header>
-            <Link />
             <ScrollLink />
             <div className="header__section">
                 <div className="hero">
                 <img className="hero__img" src={HeroImage} alt="Hero Image" align="left"/>
                 </div>
              <div className="topMenu">
-                <a className="topMenu__item" href="">
+                <Link to="/Login" className="topMenu__item" href="">
                         <span className="topMenu__login">Zaloguj</span>
-                    </a>
-
-                    <a className="topMenu__item" href="">
+                    </Link>
+                    <Link to="/Register" className="topMenu__item" href="">
                         <span className="topMenu__add">Załóż konto</span>
-                    </a>
+                    </Link>
                  </div>
                 <div className="navigation">
-                    <a className="navigation__item navigation__item--active" href="">
+                    <ScrollLink to="start" className="navigation__item navigation__item--active" href="">
                         <span className="navigation__highlight"> Start </span>
-                    </a>
+                    </ScrollLink>
 
-                    <a className="navigation__item" href="">
+                    <ScrollLink to="O co chodzi?" className="navigation__item" href="">
                         <span className="navigation__highlight"> O co chodzi? </span>
-                    </a>
+                    </ScrollLink>
 
-                    <a className="navigation__item" href="">
+                    <ScrollLink to="O nas" className="navigation__item" href="">
                         <span className="navigation__highlight"> O nas </span>
-                    </a>
+                    </ScrollLink>
 
-                    <a className="navigation__item" href="">
+                    <ScrollLink to="Fundacja i Organizacja" className="navigation__item" href="">
                         <span className="navigation__highlight"> Fundacja i organizacje </span>
-                    </a>
-                    <a className="navigation__item" href="">
+                    </ScrollLink>
+                    <ScrollLink to="Kontakt" className="navigation__item" href="">
                         <span className="navigation__highlight"> Kontakt </span>
-                    </a>
+                    </ScrollLink>
 
                      </div>
                 <div className="intro">
@@ -47,8 +45,8 @@ const HomeHeader = () => {
                     <img className="intro__img" src={decoration} alt="Decoration"/>
                 </div>
                 <div className="btn">
-                    <button className="btn__btn btn__btn-return" >ODDAJ RZECZY</button>
-                    <button className="btn__btn btn__btn-organize" >ZORGANIZUJ ZBIÓRKĘ</button>
+                    <Link to="ODDAJ RZECZY" className="btn__btn btn__btn-return" >ODDAJ RZECZY</Link>
+                    <Link to="ORGANIZUJ ZBIÓRKĘ" className="btn__btn btn__btn-organize" >ZORGANIZUJ ZBIÓRKĘ </Link>
                 </div>
 
             </div>

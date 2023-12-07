@@ -27,8 +27,8 @@ function App ()  {
               {/*<Route path="/oddaj-rzeczy/krok-4" element={<FormStep4 />} />*/}
               {/*<Route path="/oddaj-rzeczy/summary" element={<FormSummary />} />*/}
               {/*<Route path="/oddaj-rzeczy/thank-you" element={<FormThankYou />} />*/}
-              <Route path="/logowanie" element={<Login />} />
-              <Route path="/rejestracja" element={<Register />} />
+              <Route path="/Login" element={<Login />} />
+              <Route path="/Register" element={<Register />} />
               {/*<Route path="/wylogowano" element={<Logout />} />*/}
           </Routes>
       </Router>

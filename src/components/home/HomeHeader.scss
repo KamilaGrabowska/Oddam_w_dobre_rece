@@ -103,7 +103,7 @@
     letter-spacing: -0.85px;
     opacity: 1;
     margin-top: px-to-rem(220px);
-    margin-right: px-to-rem(150px);
+    margin-right: px-to-rem(200px);
     margin-left: px-to-rem(890px);
     height: px-to-rem(107px);
     line-height:1.5em;
@@ -128,6 +128,7 @@
 .btn{
   @include flex(center);
   gap: px-to-rem(44px);
+  margin-right: px-to-rem(200px);
 
 
   &__btn {
@@ -139,28 +140,32 @@
     color: $color-dark-grey;
     opacity: 1;
     text-align: center;
+    text-decoration: none;
+
+
 
 
 
     &-return {
       border: px-to-rem(0.75px)solid $color-dark-grey;
-      height: px-to-rem(120px);
-      width: px-to-rem(310px);
+      height: px-to-rem(100px);
+      width: px-to-rem(190px);
       opacity: 1;
       background-color: white;
-      padding: px-to-rem(13px) px-to-rem(93px);
+      padding: px-to-rem(15px) px-to-rem(90px);
       margin-left: px-to-rem(7px);
 
     }
 
     &-organize {
       border: px-to-rem(0.75px)solid $color-dark-grey;
-      height: px-to-rem(120px);
-      width: px-to-rem(310px);
+      height: px-to-rem(100px);
+      width: px-to-rem(290px);
       opacity: 1;
       background-color: white;
-      padding: px-to-rem(13px) px-to-rem(51px);
-      margin-left: px-to-rem(7px)
+      padding: px-to-rem(15px) px-to-rem(40px);
+      margin-left: px-to-rem(7px);
+
     }
   }
 }
