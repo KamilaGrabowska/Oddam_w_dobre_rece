@@ -2,3 +2,81 @@
 @import "../../scss/settings/colors";
 @import "../../scss/utils/functions";
 @import "../../scss/utils/mixin";
+
+
+.columns {
+  @include flex(center);
+  background-image: url(../../assets/images/ThreeColumnsBackground.png);
+  height: px-to-rem(384px);
+  width: px-to-rem(1900px);
+  gap: px-to-rem(240px);
+  padding-top: px-to-rem(10px);
+
+
+  .col {
+    text-align: center;
+    margin-left: px-to-rem(40px);
+
+
+    &__number {
+      align-content: center;
+
+      &--1 {
+        font-family: $font-base;
+        color: $color-dark-green;
+        font-size: px-to-rem(90px);
+        opacity: 1;
+        padding: px-to-rem(2px);
+
+      }
+
+      &--2 {
+        font-family: $font-base;
+        color: $color-dark-green;
+        font-size: px-to-rem(90px);
+        opacity: 1;
+        padding: px-to-rem(2px);
+
+      }
+
+      &--3 {
+        font-family: $font-base;
+        color: $color-dark-green;
+        font-size: px-to-rem(90px);
+       opacity: 1;
+        padding: px-to-rem(2px);
+
+      }
+
+    }
+
+
+    &__hdl {
+      font-family: $font-base;
+      font-size: px-to-rem(18px);
+      font-weight: bold;
+      letter-spacing: -0.36px;
+      color: $color-dark-grey;
+      text-align: center;
+      opacity: 1;
+      margin-top: px-to-rem(-50px);
+
+
+    }
+
+    &__dsc {
+      flex-wrap: wrap;
+      font-size: px-to-rem(16px);
+      font-weight: 300;
+      font-family:$font-alt;
+      color: $color-dark-grey;
+      letter-spacing: px-to-rem(-0.32px);
+      margin-top: px-to-rem(28px);
+      width: px-to-rem(370px);
+      height: px-to-rem(68px);
+      line-height:1.9;
+
+    }
+
+  }
+}
