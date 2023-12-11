@@ -2,3 +2,111 @@
 @import "../../scss/settings/colors";
 @import "../../scss/utils/functions";
 @import "../../scss/utils/mixin";
+
+.steps {
+
+  width: px-to-rem(1900px);
+  height: px-to-rem(624px);
+  opacity: 1;
+  margin-top: px-to-rem(55px);
+
+  .title {
+    @include flex(center, center, column);
+
+    &__hdl {
+      font-size: px-to-rem(38px);
+      font-family: $font-base;
+      font-weight: 700;
+      color: $color-dark-grey;
+      text-align: center;
+      letter-spacing: -0.76px;
+      opacity: 1;
+
+    }
+
+    &__img {
+      margin-top: px-to-rem(20px);
+      height: px-to-rem(33px);
+      width: px-to-rem(253px);
+    }
+  }
+
+  .columnsSteps {
+    @include flex(center, center, row);
+    background-color: $color-light_second-grey;
+    margin-top: px-to-rem(36.26px);
+    height: px-to-rem(325px);
+    gap: px-to-rem(170px);
+
+    .colSteps {
+      @include flex(center, center, column);
+
+
+      &__img {
+        align-items: center;
+        width: px-to-rem(83px);
+        height: px-to-rem(83px);
+        opacity: 1;
+
+        &--1 {
+        }
+
+        &--2 {
+        }
+
+        &--3 {
+        }
+
+        &--4 {
+        }
+      }
+
+      &__hdl {
+        font-family:$font-base ;
+        font-weight: 400;
+        font-size: $base-font-size;
+        color: $color-dark-grey;
+        border-bottom: px-to-rem(1px) solid $color-grey;
+        padding-bottom: px-to-rem(15px);
+
+      }
+
+      &__dsc {
+        font-size: px-to-rem(16px);
+        font-weight: 400;
+        font-family: $font-base;
+        color:$color-dark-grey ;
+        text-align: center;
+        margin-top: px-to-rem(-10px) ;
+        width: px-to-rem(160px);
+        height: px-to-rem(40px);
+
+      }
+
+    }
+  }
+
+  .btn {
+    position: absolute;
+    margin-top: px-to-rem(35px);
+    border: px-to-rem(0.75px) solid $color-light-grey;
+    width: px-to-rem(310px);
+    height: px-to-rem(120px);
+    transform: translateX(-50%);
+    left: 45%;
+
+
+    &__steps {
+      position: relative;
+      text-decoration: none;
+      padding: px-to-rem(13px) px-to-rem(93px);
+      font-family:$font-base;
+      font-weight: 200;
+      font-size: px-to-rem(36px);
+      color: $color-black-two;
+
+    }
+  }
+
+
+}
