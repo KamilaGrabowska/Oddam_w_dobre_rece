@@ -10,6 +10,7 @@
   opacity: 1;
   margin-top: px-to-rem(55px);
 
+
   .title {
     @include flex(center, center, column);
 
@@ -93,13 +94,15 @@
     width: px-to-rem(310px);
     height: px-to-rem(120px);
     transform: translateX(-50%);
-    left: 45%;
+    left:45%;
+
 
 
     &__steps {
       position: relative;
+      align-items: center;
       text-decoration: none;
-      padding: px-to-rem(13px) px-to-rem(93px);
+      padding: px-to-rem(15px) px-to-rem(93px);
       font-family:$font-base;
       font-weight: 200;
       font-size: px-to-rem(36px);
@@ -107,6 +110,5 @@
 
     }
   }
-
-
+  
 }

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink} from 'react-scroll';
 import decoration from '../../assets/images/decoration.png'
 import './HomeHeader.scss'
 import HeroImage from '../../assets/images/Hero_Image.png'
 const HomeHeader = () => {
+
     return (
         <header>
             <div className="header__section">
@@ -19,7 +20,7 @@ const HomeHeader = () => {
                     </Link>
                  </div>
                 <div className="navigation">
-                    <ScrollLink to="start" className="navigation__item navigation__item--active" href="">
+                    <ScrollLink to="start" className="navigation__item navigation__item--active"  href="">
                         <span className="navigation__highlight"> Start </span>
                     </ScrollLink>
 

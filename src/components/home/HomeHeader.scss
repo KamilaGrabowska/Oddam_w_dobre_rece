@@ -77,13 +77,13 @@
   &__item:hover {
     border-bottom: 0.75px solid $color-dark-grey;
     opacity: 1;
-    //padding: px-to-rem(9px) px-to-rem(20px);
+
 
   }
 
   &__item--active:after {
     opacity: 0;
-    padding: px-to-rem(9px) px-to-rem(20px);
+    //padding: px-to-rem(9px) px-to-rem(20px);
     content: "";
 
   }

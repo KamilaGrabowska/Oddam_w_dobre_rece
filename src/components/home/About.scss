@@ -1,0 +1,22 @@
+@import "../../scss/settings/fonts";
+@import "../../scss/settings/colors";
+@import "../../scss/utils/functions";
+@import "../../scss/utils/mixin";
+
+.aboutUs{
+
+  margin-top: px-to-rem(80px);
+
+  .desc{
+    &__hdl{}
+    &__img{}
+    &__info{}
+  }
+
+  .bgimg{
+    &__img{}
+  }
+
+
+
+}
