@@ -4,19 +4,68 @@
 @import "../../scss/utils/mixin";
 
 .aboutUs{
-
+  max-width: px-to-rem(1900px);
   margin-top: px-to-rem(80px);
+  background-color:$color-light_second-grey ;
+  @include flex(space-between,center);
 
   .desc{
-    &__hdl{}
-    &__img{}
-    &__info{}
+    width: 50%;
+
+    &__content {
+      text-align: center;
+      font-family:$font-base;
+      font-weight: 300;
+
+
+
+      .hdl {
+        text-align: center;
+        flex-grow: 1;
+        font-size: px-to-rem(38px);
+        letter-spacing: -0.76px;
+        opacity: 1;
+        margin-top: px-to-rem(186px);
+        color:  $color-dark-grey;
+              }
+
+      .img {
+        margin-top: px-to-rem(5px);
+        width: px-to-rem(253px);
+        height: px-to-rem(33px);
+      }
+
+      .info {
+        text-align: center;
+        letter-spacing: -0.6px;
+        font-size: px-to-rem(30px);
+        margin-top: px-to-rem(59px);
+        margin-left: px-to-rem(149px);
+        margin-right: px-to-rem(152px);
+        line-height:3.0rem;
+
+      }
+      .imgSignature{
+        width: px-to-rem(209px);
+        height: px-to-rem(148.84px);
+        margin: px-to-rem(40.09px)  px-to-rem(152px) px-to-rem(185px) px-to-rem(596px);
+
+      }
+    }
   }
+
 
   .bgimg{
-    &__img{}
+
+    &__img{
+      background: transparent  no-repeat padding-box;;
+      opacity: 1;
+
+         }
+
+
+    }
   }
 
 
 
-}

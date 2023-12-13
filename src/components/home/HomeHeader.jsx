@@ -20,15 +20,15 @@ const HomeHeader = () => {
                     </Link>
                  </div>
                 <div className="navigation">
-                    <ScrollLink to="start" className="navigation__item navigation__item--active"  href="">
+                    <ScrollLink to="start" className="navigation__item navigation__item--active"  href="#start">
                         <span className="navigation__highlight"> Start </span>
                     </ScrollLink>
 
-                    <ScrollLink to="O co chodzi?" className="navigation__item" href="">
+                    <ScrollLink to="O co chodzi?" className="navigation__item" href="#O co chodzi?">
                         <span className="navigation__highlight"> O co chodzi? </span>
                     </ScrollLink>
 
-                    <ScrollLink to="O nas" className="navigation__item" href="">
+                    <ScrollLink to="O nas" className="navigation__item" href="#O nas">
                         <span className="navigation__highlight"> O nas </span>
                     </ScrollLink>
 
