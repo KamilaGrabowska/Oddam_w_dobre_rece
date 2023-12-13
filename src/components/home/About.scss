@@ -3,20 +3,19 @@
 @import "../../scss/utils/functions";
 @import "../../scss/utils/mixin";
 
-.aboutUs{
+.aboutUs {
   max-width: px-to-rem(1900px);
   margin-top: px-to-rem(80px);
-  background-color:$color-light_second-grey ;
-  @include flex(space-between,center);
+  background-color: $color-light_second-grey;
+  @include flex(space-between, center);
 
-  .desc{
+  .desc {
     width: 50%;
 
     &__content {
       text-align: center;
-      font-family:$font-base;
+      font-family: $font-base;
       font-weight: 300;
-
 
 
       .hdl {
@@ -26,8 +25,8 @@
         letter-spacing: -0.76px;
         opacity: 1;
         margin-top: px-to-rem(186px);
-        color:  $color-dark-grey;
-              }
+        color: $color-dark-grey;
+      }
 
       .img {
         margin-top: px-to-rem(5px);
@@ -42,30 +41,36 @@
         margin-top: px-to-rem(59px);
         margin-left: px-to-rem(149px);
         margin-right: px-to-rem(152px);
-        line-height:3.0rem;
+        line-height: 3.0rem;
 
       }
-      .imgSignature{
+
+      .imgSignature {
         width: px-to-rem(209px);
         height: px-to-rem(148.84px);
-        margin: px-to-rem(40.09px)  px-to-rem(152px) px-to-rem(185px) px-to-rem(596px);
+        margin: px-to-rem(40.09px) px-to-rem(152px) px-to-rem(185px) px-to-rem(596px);
 
       }
     }
   }
 
 
-  .bgimg{
+  .bgimg {
+    overflow-x: hidden;
 
-    &__img{
-      background: transparent  no-repeat padding-box;;
+    &__img {
+      background: transparent no-repeat padding-box;
+      width: px-to-rem(1308px);
+      height: px-to-rem(1050px);
       opacity: 1;
+      margin-right: px-to-rem(-350px);
 
-         }
 
 
     }
+
   }
+}
 
 
 

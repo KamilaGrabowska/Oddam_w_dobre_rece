@@ -17,7 +17,7 @@ const About = () => {
                 </div>
             </div>
             <div className="bgimg">
-                <img className="bgimg__img" src={People} alt="Smile Poeple" align="right" height="982px" width="850px"/>
+                <img className="bgimg__img" src={People} alt="Smile Poeple" align="right" />
             </div>
 
         </section>
