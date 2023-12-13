@@ -4,7 +4,7 @@ import Icon_Bag from '../../assets/images/Icon_Bag.png'
 import Icon_search from '../../assets/images/Icon_search.png'
 import Icon_reload from '../../assets/images/Icon_reload.png'
 import {Link} from "react-router-dom";
-import './HomeSimpleSteps.scss'
+import '../../scss/HomeSimpleSteps.scss'
 
 const HomeSimpleSteps = () => {
 

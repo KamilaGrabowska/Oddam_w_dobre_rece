@@ -1,4 +1,4 @@
-
+import '../../scss/HomeThreeColums.scss'
 
 const HomeThreeColumns = () => {
     return (

@@ -1,4 +1,4 @@
-import './About.scss'
+import '../../scss/About.scss'
 import decoration from '../../assets/images/decoration.png'
 import People from '../../assets/images/People.png'
 import Signature from '../../assets/images/Signature.png'
