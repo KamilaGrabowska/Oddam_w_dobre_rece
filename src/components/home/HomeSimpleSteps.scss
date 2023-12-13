@@ -9,7 +9,7 @@
   height: px-to-rem(624px);
   opacity: 1;
   margin-top: px-to-rem(55px);
-
+  position: relative;
 
   .title {
     @include flex(center, center, column);
@@ -94,12 +94,13 @@
     width: px-to-rem(310px);
     height: px-to-rem(120px);
     transform: translateX(-50%);
-    left:45%;
+    left:50%;
 
 
 
     &__steps {
       position: relative;
+     justify-content: center;
       align-items: center;
       text-decoration: none;
       padding: px-to-rem(15px) px-to-rem(93px);
@@ -107,6 +108,7 @@
       font-weight: 200;
       font-size: px-to-rem(36px);
       color: $color-black-two;
+
 
     }
   }
