@@ -5,9 +5,10 @@ import OrganizationsHome from './components/organizations/OrganizationsHome.jsx'
 import LocalHome from './components/local/LocalHome.jsx'
 import LoggedInHome from  './components/logged-in/LoggedInHome.jsx'
 import Login from './components/logowanie/Login.jsx'
-import Register from './components/rejestracja/Register.jsx'
-
-
+import Register from './components/rejestracja/Register.jsx';
+import FormStep2 from './components/home/HomeHeader.jsx'
+import FormStep1 from './components/home/HomeHeader.jsx'
+import FormStep3 from './components/home/HomeHeader.jsx'
 function App ()  {
 
 
@@ -16,19 +17,19 @@ function App ()  {
       <Router>
           <Routes>
           <Route path="/" element={<Home />} />
+              <Route path="/Login" element={<Login />} />
+              <Route path="/Register" element={<Register />} />
               <Route path="/organizations" element={<OrganizationsHome />} />
               <Route path="/local" element={<LocalHome />} />
               <Route path="/logged-in" element={<LoggedInHome />} />
-              {/*<Route path="/oddaj-rzeczy" element={<FormStep1 />} />*/}
-              {/*<Route path="/oddaj-rzeczy/krok-2" element={<FormStep2 />} />*/}
+              <Route path="/" element={<FormStep1 />} />
+              <Route path="/" element={<FormStep2 />} />
               {/*<Route path="/oddaj-rzeczy/krok-2/select" element={<FormStep2OpenedSelect />} />*/}
-              {/*<Route path="/oddaj-rzeczy/krok-3" element={<FormStep3 />} />*/}
+              <Route path="/" element={<FormStep3 />} />
               {/*<Route path="/oddaj-rzeczy/krok-3/select" element={<FormStep3OpenedSelect />} />*/}
               {/*<Route path="/oddaj-rzeczy/krok-4" element={<FormStep4 />} />*/}
               {/*<Route path="/oddaj-rzeczy/summary" element={<FormSummary />} />*/}
               {/*<Route path="/oddaj-rzeczy/thank-you" element={<FormThankYou />} />*/}
-              <Route path="/Login" element={<Login />} />
-              <Route path="/Register" element={<Register />} />
               {/*<Route path="/wylogowano" element={<Logout />} />*/}
           </Routes>
       </Router>

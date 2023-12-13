@@ -4,6 +4,8 @@
 @import "../../scss/utils/mixin";
 
 
+
+
 .header__section {
   height: px-to-rem(963px);
   width: px-to-rem(1758px);
@@ -54,118 +56,114 @@
 .navigation {
   @include flex(flex-end);
   text-align: right;
-  gap: px-to-rem(50px);
+  gap: px-to-rem(20px);
   margin-right: px-to-rem(50px);
 
 
   &__item {
-    font-size: $base-font-size;
-    font-family: $font-base;
-    font-weight: 400;
-    color: $color-dark-grey;
-    letter-spacing: -0.36px;
-    opacity: 1;
-    margin-top: px-to-rem(25px);
-    transition: all 400ms ease-in-out;
-    box-sizing: border-box;
-    text-decoration: none;
-    display: inline-block;
-    border: solid px-to-rem(1px) transparent;
 
-  }
-
-  &__item:hover {
-    border-bottom: 0.75px solid $color-dark-grey;
-    opacity: 1;
+    a {
+      font-size: $base-font-size;
+      font-family: $font-base;
+      font-weight: 400;
+      color: $color-dark-grey;
+      letter-spacing: -0.36px;
+      opacity: 1;
+      margin-top: px-to-rem(25px);
+      transition: all 400ms ease-in-out;
+      box-sizing: border-box;
+      text-decoration: none;
+      display: inline-block;
+      border: solid px-to-rem(1px) transparent;
+      margin-inline: 15px;
+    }
 
 
+    a:hover {
+      border-bottom: 0.75px solid $color-dark-grey;
+      opacity: 1;
+      text-decoration: none;
+    }
   }
 
   &__item--active:after {
     opacity: 0;
     //padding: px-to-rem(9px) px-to-rem(20px);
     content: "";
-
   }
-
 }
 
+  .intro {
+    position: relative;
 
-.intro {
-  position: relative;
-
-  &__info {
-    font-family: $font-base;
-    font-size: px-to-rem(38px);
-    color: $color-dark-grey;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: -0.85px;
-    opacity: 1;
-    margin-top: px-to-rem(220px);
-    margin-right: px-to-rem(200px);
-    margin-left: px-to-rem(890px);
-    height: px-to-rem(107px);
-    line-height:1.5em;
+    &__info {
+      font-family: $font-base;
+      font-size: px-to-rem(38px);
+      color: $color-dark-grey;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: -0.85px;
+      opacity: 1;
+      margin-top: px-to-rem(220px);
+      margin-right: px-to-rem(200px);
+      margin-left: px-to-rem(890px);
+      height: px-to-rem(107px);
+      line-height: 1.5em;
 
 
+    }
+
+    &__img {
+      position: absolute;
+      @include flex(center);
+      align-items: center;
+      margin-top: px-to-rem(10px);
+      margin-left: px-to-rem(1115px);
+      height: px-to-rem(33px);
+      opacity: 1;
+      background: transparent no-repeat padding-box;
+    }
 
   }
 
-  &__img {
-    position: absolute;
+  .btn {
     @include flex(center);
-    align-items: center;
-    margin-top: px-to-rem(10px);
-    margin-left: px-to-rem(1115px);
-    height: px-to-rem(33px);
-    opacity: 1;
-    background: transparent no-repeat padding-box;
-  }
-
-}
-
-.btn{
-  @include flex(center);
-  gap: px-to-rem(44px);
-  margin-right: px-to-rem(20px);
+    gap: px-to-rem(44px);
+    margin-right: px-to-rem(20px);
 
 
-  &__btn {
-    margin-top: px-to-rem(120px);
-    margin-bottom: px-to-rem(271px);
-    font-size: px-to-rem(36px);
-    font-family:$font-base;
-    font-weight: 300;
-    color: $color-dark-grey;
-    opacity: 1;
-    text-align: center;
-    text-decoration: none;
-
-
-
-
-
-    &-return {
-      border: px-to-rem(0.75px)solid $color-dark-grey;
-      height: px-to-rem(100px);
-      width: px-to-rem(100px);
+    &__btn {
+      margin-top: px-to-rem(120px);
+      margin-bottom: px-to-rem(271px);
+      font-size: px-to-rem(36px);
+      font-family: $font-base;
+      font-weight: 300;
+      color: $color-dark-grey;
       opacity: 1;
-      background-color: white;
-      padding: px-to-rem(20px) px-to-rem(90px);
-      margin-left: px-to-rem(7px);
+      text-align: center;
+      text-decoration: none;
 
-    }
 
-    &-organize {
-      border: px-to-rem(0.75px)solid $color-dark-grey;
-      height: px-to-rem(100px);
-      width: px-to-rem(200px);
-      opacity: 1;
-      background-color: white;
-      padding: px-to-rem(20px) px-to-rem(40px);
-      margin-left: px-to-rem(7px);
+      &-return {
+        border: px-to-rem(0.75px) solid $color-dark-grey;
+        height: px-to-rem(100px);
+        width: px-to-rem(100px);
+        opacity: 1;
+        background-color: white;
+        padding: px-to-rem(20px) px-to-rem(90px);
+        margin-left: px-to-rem(7px);
 
+      }
+
+      &-organize {
+        border: px-to-rem(0.75px) solid $color-dark-grey;
+        height: px-to-rem(100px);
+        width: px-to-rem(200px);
+        opacity: 1;
+        background-color: white;
+        padding: px-to-rem(20px) px-to-rem(40px);
+        margin-left: px-to-rem(7px);
+
+      }
     }
   }
-}
