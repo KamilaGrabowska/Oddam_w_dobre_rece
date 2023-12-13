@@ -6,9 +6,7 @@ import LocalHome from './components/local/LocalHome.jsx'
 import LoggedInHome from './components/logged-in/LoggedInHome.jsx'
 import Login from './components/logowanie/Login.jsx'
 import Register from './components/rejestracja/Register.jsx';
-import FormStep2 from './components/home/HomeHeader.jsx'
-import FormStep1 from './components/home/HomeHeader.jsx'
-import FormStep3 from './components/home/HomeHeader.jsx'
+
 
 function App() {
 
@@ -23,10 +21,10 @@ function App() {
                 <Route path="/organizations" element={<OrganizationsHome/>}/>
                 <Route path="/local" element={<LocalHome/>}/>
                 <Route path="/logged-in" element={<LoggedInHome/>}/>
-                <Route path="/" element={<FormStep1/>}/>
-                <Route path="/" element={<FormStep2/>}/>
+                {/*<Route path="/" element={<FormStep1/>}/>*/}
+                {/*<Route path="/" element={<FormStep2/>}/>*/}
                 {/*<Route path="/oddaj-rzeczy/krok-2/select" element={<FormStep2OpenedSelect />} />*/}
-                <Route path="/" element={<FormStep3/>}/>
+                {/*<Route path="/" element={<FormStep3/>}/>*/}
                 {/*<Route path="/oddaj-rzeczy/krok-3/select" element={<FormStep3OpenedSelect />} />*/}
                 {/*<Route path="/oddaj-rzeczy/krok-4" element={<FormStep4 />} />*/}
                 {/*<Route path="/oddaj-rzeczy/summary" element={<FormSummary />} />*/}

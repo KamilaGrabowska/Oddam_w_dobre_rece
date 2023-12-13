@@ -2,3 +2,56 @@
 @import "settings/colors";
 @import "utils/functions";
 @import "utils/mixin";
+
+
+.login__section{
+  width: 1858px;
+  height: 946px;
+  background: $base-color-primary no-repeat padding-box;
+  opacity: 1;
+
+
+  .login__menu{
+    @include flex(flex-end);
+    gap: px-to-rem(20px);
+    margin-top: px-to-rem(20px);
+    margin-right: px-to-rem(49px);
+    text-align: right;
+
+    &--item {
+      text-decoration: none;
+      padding-top: px-to-rem(9px);
+      padding-bottom: px-to-rem(9px);
+
+    }
+      &--login{
+        font-size: px-to-rem(14px);
+        font-family: $font-base;
+        color: $color-grey-two
+      }
+
+      &--register{
+       ;
+      }
+
+    }
+
+
+  .login__nav{
+  }
+
+  .container{}
+  .login__container{
+    &--title{}
+    &--img{}
+  }
+
+  .login__form {
+  }
+
+  .login__btn{
+    &--addAccount{}
+    &--LoggIn{}
+  }
+
+}
