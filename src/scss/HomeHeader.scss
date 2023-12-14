@@ -27,6 +27,7 @@
   margin-top: px-to-rem(20px);
   margin-right: px-to-rem(49px);
   text-align: right;
+  font-weight: 300;
 
   &__item {
     text-decoration: none;
@@ -64,7 +65,7 @@
     a {
       font-size: $base-font-size;
       font-family: $font-base;
-      font-weight: 400;
+      font-weight: 300;
       color: $color-dark-grey;
       letter-spacing: -0.36px;
       opacity: 1;
@@ -99,7 +100,7 @@
       font-family: $font-base;
       font-size: px-to-rem(38px);
       color: $color-dark-grey;
-      font-weight: 400;
+      font-weight: 300;
       text-align: center;
       letter-spacing: -0.85px;
       opacity: 1;
@@ -144,24 +145,26 @@
 
 
       &-return {
-        border: px-to-rem(0.75px) solid $color-dark-grey;
+        border: px-to-rem(0.65px) solid $color-dark-grey;
         height: px-to-rem(100px);
         width: px-to-rem(100px);
         opacity: 1;
-        background-color: white;
+        background-color: $color-white;
         padding: px-to-rem(20px) px-to-rem(90px);
-        margin-left: px-to-rem(7px);
+        margin-left: px-to-rem(5px);
+        text-align: center;
 
       }
 
       &-organize {
-        border: px-to-rem(0.75px) solid $color-dark-grey;
+        border: px-to-rem(0.65px) solid $color-dark-grey;
         height: px-to-rem(100px);
         width: px-to-rem(200px);
         opacity: 1;
-        background-color: white;
-        padding: px-to-rem(20px) px-to-rem(40px);
+        background-color: $color-white;
+        padding: px-to-rem(20px) px-to-rem(50px);
         margin-left: px-to-rem(7px);
+        text-align: center;
 
       }
     }

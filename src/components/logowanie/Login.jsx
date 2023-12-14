@@ -12,11 +12,12 @@ const Login = () => {
                         <a className="login__menu--login">Zaloguj</a>
                     </RouterLink>
                     <RouterLink to="/Register" className="login__menu--item" href="">
-                        <a className="llogin__menu--register">Załóż konto</a>
+                        <a className="login__menu--register">Załóż konto</a>
                     </RouterLink>
                 </div>
                 <div className="login__nav">
                     <a href="/">Start</a>
+                    <a href="/">O co chodzi?</a>
                     <a href="/">O nas</a>
                     <a href="/">Fundacja i organizacje</a>
                     <a href="/">Kontakt</a>
@@ -28,9 +29,11 @@ const Login = () => {
                     <img  className="login__container--img" src={decoration} alt="Decoration"/>
                 </div>
 
-                <form className="login__form">
-                    <label>Email</label> <br />
-                    <label >Hasło</label>
+                <form  action="" className="login__form">
+                    <label className="login__form--label">Email</label>  <br />
+                    <input type="email" id="email" className="login__form--in" /> <br />
+                    <label className="login__form--label"> Hasło </label> <br />
+                    <input type="text" id="haslo" className="login__form--in"/>
                 </form>
 
                 <div className="login__btn">

@@ -20,6 +20,7 @@
 
     &__number {
       align-content: center;
+      font-weight: 300;
 
       &--1 {
         font-family: $font-base;
@@ -54,7 +55,7 @@
     &__hdl {
       font-family: $font-base;
       font-size: px-to-rem(18px);
-      font-weight: bold;
+      font-weight: 400;
       letter-spacing: -0.36px;
       color: $color-dark-grey;
       text-align: center;

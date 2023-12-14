@@ -17,7 +17,7 @@
     &__hdl {
       font-size: px-to-rem(38px);
       font-family: $font-base;
-      font-weight: 700;
+      font-weight: 300;
       color: $color-dark-grey;
       text-align: center;
       letter-spacing: -0.76px;
@@ -64,10 +64,10 @@
 
       &__hdl {
         font-family:$font-base ;
-        font-weight: 400;
+        font-weight: 300;
         font-size: $base-font-size;
         color: $color-dark-grey;
-        border-bottom: px-to-rem(1px) solid $color-grey;
+        border-bottom: px-to-rem(0.85px) solid $color-grey;
         padding-bottom: px-to-rem(15px);
 
       }
