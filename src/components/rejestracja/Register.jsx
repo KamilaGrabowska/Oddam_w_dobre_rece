@@ -1,16 +1,16 @@
 import {Link as RouterLink} from "react-router-dom";
 import decoration from "../../assets/images/decoration.png";
-
+import '../../scss/Register.scss'
 const Register = () => {
     return (
 
         <section className="register__section">
             <div className="register__menu">
-                <RouterLink to="/Login" className="register__menu--item" href="">
-                    <a className="register__menu--login">Zaloguj</a>
+                <RouterLink to="/Login" className="register__menu--itemR" href="">
+                    <a className="register__menu--loginR">Zaloguj</a>
                 </RouterLink>
-                <RouterLink to="/Register" className="register__menu--item" href="">
-                    <a className="register__menu--register">Załóż konto</a>
+                <RouterLink to="/Register" className="register__menu--itemR" href="">
+                    <a className="register__menu--registerR">Załóż konto</a>
                 </RouterLink>
             </div>
 
@@ -33,13 +33,13 @@ const Register = () => {
                     <input type="email" id="email" className="register__form--inR" /> <br />
                     <label className="register__form--labelR"> Hasło </label> <br />
                     <input type="text" id="haslo" className="register__form--inR"/><br />
-                    <label className="register__form--labelR">  Powtórz hasło </label> <br />
+                    <label className="register__form--labelR">  Powtórz hasło </label>
                     <input type="text" id="Powtorz haslo" className="register__form--inR"/>
                 </form>
 
-                <div className="register_btn">
-                    <button className="regiser__btn--addAccountR">Załóż konto</button>
-                    <button className="register_btn--LoggInR">Zaloguj się</button>
+                <div className="register__btn">
+                    <button className="register__btn--addAccountR">Załóż konto</button>
+                    <button className="register__btn--LoggInR">Zaloguj się</button>
 
                 </div>
 

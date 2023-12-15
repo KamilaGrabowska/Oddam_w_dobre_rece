@@ -100,11 +100,11 @@
       margin-top: px-to-rem(67px);
 
       &--label {
-        font-family: $font-login-label;
-        font-weight: 600;
+        font-family:$font-login-label;
+        text-align: left;
+        font-weight: 400;
         color: $color-dark-grey;
-        text-align: right;
-        margin: px-to-rem(10px) px-to-rem(275.25px) px-to-rem(10px) px-to-rem(67.25px);
+        margin: px-to-rem(10px) px-to-rem(345px) px-to-rem(10px) px-to-rem(67.25px);
 
 
       }
@@ -115,6 +115,7 @@
         border-bottom: px-to-rem(1px) solid $color-dark-grey;
         height: px-to-rem(20px);
         background-color:$color-light_second-grey;
+        width: px-to-rem(250px);
 
 
       }

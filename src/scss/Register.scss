@@ -5,6 +5,167 @@
 
 .register__section{
 
+  width: 1900px;
+  height: 946px;
+  background: $base-color-primary no-repeat padding-box;
+  opacity: 1;
+
+  .register__menu{
+
+    @include flex(flex-end);
+    gap: px-to-rem(20px);
+    margin-top: px-to-rem(20px);
+    margin-right: px-to-rem(49px);
+    text-align: right;
+
+    &--itemR{
+      text-decoration: none;
+      padding-top: px-to-rem(9px);
+      padding-bottom: px-to-rem(9px);
+
+    }
+
+    &--loginR{
+      font-size: px-to-rem(14px);
+      font-family: $font-base;
+      color: $color-grey-two;
+    }
+
+    &--registerR{
+      font-size: px-to-rem(14px);
+      font-family: $font-base;
+      color: $color-grey-two;
+      border: 0.75px solid $color-yellow;
+      opacity: 1;
+      padding: px-to-rem(9px) px-to-rem(10px);
+
+    }
+
+  }
+
+  .register__nav{
+
+    @include flex(flex-end);
+    text-align: right;
+    gap: px-to-rem(20px);
+    margin-right: px-to-rem(50px);
+
+    a{
+      font-size: $base-font-size;
+      font-family: $font-base;
+      font-weight: 400;
+      letter-spacing: -0.36px;
+      opacity: 1;
+      margin-top: px-to-rem(25px);
+      transition: all 400ms ease-in-out;
+      box-sizing: border-box;
+      text-decoration: none;
+      display: inline-block;
+      border: solid px-to-rem(1px) transparent;
+      margin-inline: 15px;
+      color: $color-dark-grey;
+
+
+    }
+  }
+
+  .box{
+
+    @include flex(center, center, column);
+    margin-top: px-to-rem(123px);
+
+    .register__box{
+      @include flex(center, center, column);
+
+      &--titleR {
+        font-family: $font-base;
+        font-size: px-to-rem(40px);
+        color: $color-dark-grey;
+        text-align: center;
+        font-weight: 200;
+        width: px-to-rem(250px);
+        height: px-to-rem(55px)
+
+      }
+
+      &--imgR{
+        margin-top: px-to-rem(2px);
+        width: px-to-rem(253px);
+        height: px-to-rem(33px);
+
+      }
+
+    }
+
+    .register__form{
+
+      @include flex(center, center, column);
+      background: $color-light_second-grey 0% 0% no-repeat padding-box;
+      width: px-to-rem(395px);
+      height: px-to-rem(350px);
+      margin-top: px-to-rem(67px);
+
+
+      &--labelR{
+        width: px-to-rem(120px);
+        height: px-to-rem(22px);
+        font-family:$font-login-label ;
+        font-weight: 400;
+        color: $color-dark-grey;
+        text-align: left;
+        margin: px-to-rem(10px) px-to-rem(275.25px) px-to-rem(10px) px-to-rem(67.25px);
+
+      }
+
+      &--inR{
+        margin-top: px-to-rem(10px);
+        margin-right: px-to-rem(67.25px);
+        border: transparent;
+        border-bottom: px-to-rem(1px) solid $color-dark-grey;
+        height: px-to-rem(20px);
+        background-color:$color-light_second-grey;
+        width: px-to-rem(250px);
+
+      }
+
+    }
+
+    .register__btn {
+      margin-top: px-to-rem(40px);
+
+
+      &--addAccountR{
+        margin-right: px-to-rem(293px);
+        font-family:$font-base;
+        font-size:$base-font-size;
+        font-weight: 200;
+        color: $color-black;
+        text-align: left;
+        background-color: white;
+        border: transparent;
+        text-decoration: none;
+
+      }
+      &--LoggInR{
+        font-family:$font-base;
+        font-size:$base-font-size;
+        font-weight: 200;
+        color: $color-black;
+        text-align: left;
+        background-color: white;
+        border: px-to-rem(0.75px) solid $color-dark-grey;
+        width: px-to-rem(120px);
+        height: px-to-rem(50px);
+        padding: px-to-rem(13px) px-to-rem(8px);
+
+      }
+    }
+
+
+
+
+
+  }
 
 
 
