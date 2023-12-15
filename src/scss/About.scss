@@ -53,7 +53,7 @@
         width: px-to-rem(209px);
         height: px-to-rem(148.84px);
         margin: px-to-rem(40.09px) px-to-rem(152px) px-to-rem(185px) px-to-rem(596px);
-
+        @include flex(flex-end);
       }
     }
   }
@@ -64,9 +64,10 @@
 
 
     &__img {
+      @include flex(flex-end);
       background: transparent no-repeat padding-box;
-      width: px-to-rem(1308px);
-      height: px-to-rem(1050px);
+      width: px-to-rem(1590px);
+      height: auto;
       opacity: 1;
       margin-right: px-to-rem(-350px);
 

@@ -6,7 +6,7 @@
 
 
 .header__section {
-  //height: px-to-rem(963px);
+  height: px-to-rem(963px);
   //width: px-to-rem(1758px);
 }
 
@@ -19,6 +19,7 @@
     margin-left: px-to-rem(-355px);
     background: transparent no-repeat padding-box;
     opacity: 1;
+
   }
 }
 .topMenu {
@@ -105,20 +106,21 @@
       letter-spacing: -0.85px;
       opacity: 1;
       margin-top: px-to-rem(220px);
-      margin-right: px-to-rem(200px);
+      margin-right: px-to-rem(180px);
       margin-left: px-to-rem(890px);
       height: px-to-rem(107px);
       line-height: 1.5em;
+
 
 
     }
 
     &__img {
       position: absolute;
-      @include flex(center);
+      @include flex(center, center);
       align-items: center;
       margin-top: px-to-rem(10px);
-      margin-left: px-to-rem(1115px);
+      margin-left: px-to-rem(1430px);
       height: px-to-rem(33px);
       opacity: 1;
       background: transparent no-repeat padding-box;
