@@ -111,7 +111,7 @@
 
       &--in {
         margin-right: px-to-rem(67.25px);
-        border: none;
+        border: transparent;
         border-bottom: px-to-rem(1px) solid $color-dark-grey;
         height: px-to-rem(20px);
         background-color:$color-light_second-grey;
@@ -133,6 +133,7 @@
         text-align: left;
         background-color: white;
         border: transparent;
+        text-decoration: none;
       }
 
       &--LoggIn {

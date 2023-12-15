@@ -1,9 +1,27 @@
 import '../../scss/Login.scss'
-import {Link as RouterLink} from 'react-router-dom';
+import {Link, Link as RouterLink} from 'react-router-dom';
 import decoration from '../../assets/images/decoration.png'
+import React, { useState } from 'react';
 
-const Login = () => {
 
+    const Login = () => {
+        const [login, setLogin] = useState('');
+        const [password, setPassword] = useState('');
+
+        const handleLoginChange = (e) => {
+            setLogin(e.target.value);
+        };
+
+        const handlePasswordChange = (e) => {
+            setPassword(e.target.value);
+        };
+
+        const handleLoginSubmit = (e) => {
+            e.preventDefault();
+            console.log('Login:', login);
+            console.log('Password:', password);
+
+        };
 
     return (
         <section className="login__section">
@@ -29,16 +47,30 @@ const Login = () => {
                     <img  className="login__container--img" src={decoration} alt="Decoration"/>
                 </div>
 
-                <form  action="" className="login__form">
+                <form  action="" className="login__form" onSubmit={handleLoginSubmit}>
                     <label className="login__form--label">Email</label>  <br />
-                    <input type="email" id="email" className="login__form--in" /> <br />
+                    <input
+                        type="text"
+                           id="email"
+                           className="login__form--in"
+                           value={login}
+                           onChange={handleLoginChange}
+
+                    /> <br />
                     <label className="login__form--label"> Hasło </label> <br />
-                    <input type="text" id="haslo" className="login__form--in"/>
+                    <input
+                        type="password"
+                        id="haslo"
+                        className="login__form--in"
+                        value={password}
+                        onChange={handlePasswordChange}/>
                 </form>
 
                 <div className="login__btn">
-                    <button className="login__btn--addAccount">Załóż konto</button>
-                    <button className="login__btn--LoggIn">Zaloguj się</button>
+                    <Link to='/Register' className="login__btn--addAccount">Załóż konto</Link>
+                    <button
+                        type="submit"
+                        className="login__btn--LoggIn">Zaloguj się</button>
 
 
                 </div>

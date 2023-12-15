@@ -4,18 +4,21 @@
 @import "utils/mixin";
 
 .aboutUs {
-  max-width: px-to-rem(1900px);
-  margin-top: px-to-rem(80px);
+  //max-width: px-to-rem(1900px);
+  margin-top: px-to-rem(250px);
   background-color: $color-light_second-grey;
   @include flex(space-between, center);
 
+
   .desc {
     width: 50%;
+
 
     &__content {
       text-align: center;
       font-family: $font-base;
       font-weight: 300;
+
 
 
       .hdl {
@@ -58,6 +61,7 @@
 
   .bgimg {
     overflow-x: hidden;
+
 
     &__img {
       background: transparent no-repeat padding-box;
