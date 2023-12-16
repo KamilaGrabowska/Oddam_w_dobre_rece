@@ -7,14 +7,59 @@
 .organization {
 
   .title__organization{
-    &--hdl{}
-    &--img{}
+    @include flex(center, center, column);
+
+    &--hdl{
+      font-family:$font-base;
+      font-weight:500;
+      font-size: px-to-rem(40px);
+      color:$color-dark-grey ;
+      text-align: center;
+      letter-spacing: -0.76px;
+      width: px-to-rem(360px);
+      height: px-to-rem(52px);
+    }
+
+    &--img{
+      width: px-to-rem(253px);
+      height: px-to-rem(33px);
+
+    }
   }
 
   .list{
-    &__fund{}
-    &__org{}
-    &__local{}
+    @include flex(space-beetwen, center, row);
+    gap: px-to-rem(130px);
+    justify-content: center;
+
+
+    &__fund{
+      font-size: px-to-rem(24px);
+      font-family:$font-base;
+      font-weight: 200;
+      color: $color-dark-grey ;
+      border: px-to-rem(0.75px) solid $color-dark-grey  ;
+      width: px-to-rem(208px);
+      height: px-to-rem(79px);
+      text-align: center;
+      padding: px-to-rem(10px) px-to-rem(13px);
+      @include flex(center, center);
+
+    }
+    &__org{
+      font-size: px-to-rem(24px);
+      font-family:$font-base;
+      font-weight: 200;
+      color: $color-dark-grey ;
+      text-align: right;
+    }
+    &__local{
+      font-size: px-to-rem(24px);
+      font-family:$font-base;
+      font-weight: 200;
+      color: $color-dark-grey ;
+      text-align: right;
+    }
   }
 
   .fund{

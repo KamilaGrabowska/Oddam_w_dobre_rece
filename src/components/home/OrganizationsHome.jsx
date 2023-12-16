@@ -191,8 +191,8 @@ const OrganizationsHome  = () => {
 
             <div className="list">
                 <h2 className="list__fund">Fundacjom</h2>
-                <h2 className="list__org">Organizacjom pozarządowym</h2>
-                <h2 className="list__local">Lokalnym zbiórkom</h2>
+                <h2 className="list__org">Organizacjom <br/> pozarządowym</h2>
+                <h2 className="list__local">Lokalnym <br/> zbiórkom</h2>
             </div>
 
 
