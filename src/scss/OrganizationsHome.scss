@@ -1,0 +1,35 @@
+@import "settings/fonts";
+@import "settings/colors";
+@import "utils/functions";
+@import "utils/mixin";
+
+
+.organization {
+
+  .title__organization{
+    &--hdl{}
+    &--img{}
+  }
+
+  .list{
+    &__fund{}
+    &__org{}
+    &__local{}
+  }
+
+  .fund{
+    &__descryption{}
+    &__health{}
+    &__kids{}
+    &__wihoutHome{}
+
+  }
+
+  .btn__organization{
+
+
+
+  }
+
+
+}

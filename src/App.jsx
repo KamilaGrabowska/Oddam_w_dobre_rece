@@ -1,7 +1,7 @@
 import './App.css'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './components/home/Home.jsx'
-import OrganizationsHome from './components/organizations/OrganizationsHome.jsx'
+import OrganizationsHome from './components/home/OrganizationsHome.jsx'
 import LocalHome from './components/local/LocalHome.jsx'
 import LoggedInHome from './components/logged-in/LoggedInHome.jsx'
 import Login from './components/logowanie/Login.jsx'

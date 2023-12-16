@@ -36,7 +36,7 @@ const HomeHeader = () => {
                         <a href="/"> O nas </a>
                     </ScrollLink>
 
-                    <ScrollLink to="/" smooth={true} duration={500} className="navigation__item">
+                    <ScrollLink to="organization" smooth={true} duration={500} className="navigation__item">
                         <a href="/"> Fundacja i organizacje </a>
                     </ScrollLink>
 
