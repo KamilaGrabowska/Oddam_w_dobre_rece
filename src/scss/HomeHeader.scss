@@ -95,8 +95,8 @@
 }
 
   .intro {
-    position: relative;
-
+    //position: relative;
+    @include flex(center, center, column);
     &__info {
       font-family: $font-base;
       font-size: px-to-rem(38px);
@@ -106,9 +106,10 @@
       letter-spacing: -0.85px;
       opacity: 1;
       margin-top: px-to-rem(220px);
-      margin-right: px-to-rem(180px);
+      margin-right: px-to-rem(870px);
       margin-left: px-to-rem(890px);
       height: px-to-rem(107px);
+      width: px-to-rem(674px);
       line-height: 1.5em;
 
 
@@ -116,9 +117,9 @@
     }
 
     &__img {
-      position: absolute;
-      @include flex(center, center);
+      //position: absolute;
       align-items: center;
+      margin-right: px-to-rem(1470px);
       margin-top: px-to-rem(10px);
       margin-left: px-to-rem(1430px);
       height: px-to-rem(33px);
