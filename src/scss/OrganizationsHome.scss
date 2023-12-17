@@ -20,6 +20,7 @@
       letter-spacing: -0.76px;
       width: px-to-rem(360px);
       height: px-to-rem(52px);
+      margin-top: px-to-rem(70px);
     }
 
     &--img{
@@ -68,28 +69,95 @@
     &__item {
       @include flex(center,center, column);
       margin-top: px-to-rem(66px);
-      &__dsc {
+      margin-left: px-to-rem(278px);
+      margin-right: px-to-rem(278px);
 
-        &__hdl {
+      &__dsc {
+        border-bottom: px-to-rem(0.75px) solid $color-dark-grey;
+        width: px-to-rem(1344px);
+
+
+        &--hdl {
+        font-family:$font-alt;
+        font-size: px-to-rem(26px);
+        font-weight: 200;
+        color: $color-dark-grey;
+        text-align: left;
+        margin-top: px-to-rem(24px);
+
 
         }
 
-        &__txt {
-          &--right {
+        &--txt {
+
+          margin-top: px-to-rem(6px);
+          margin-bottom: px-to-rem(-16px);
+          font-family: $font-alt-italicLight;
+          color: $color-dark-grey;
+          font-weight: 300;
+          text-align: left;
+          line-height: px-to-rem(-3px);
+
+
+          &__right {
+            @include flex(flex-end , flex-end,);
+            text-align: right;
+            font-weight: 200;
+            font-size:$base-font-size;
+            font-family:'Merriweather, Light', sans-serif;
+            padding-top:px-to-rem(15px) ;
+            padding-bottom: px-to-rem(20px);
+            padding-left: px-to-rem(900px);
+
           }
         }
 
       }
     }
+
+    .fund__item__dsc:last-child{
+      border-bottom: none;
+
+    }
+
   }
 
   .btn__organization{
+    @include flex(center,center);
+    margin-top: px-to-rem(63px);
+    gap:px-to-rem( 58px);
+    height: px-to-rem(24px);
 
 
     &--btn{
+      text-align: center;
+      background: white;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+      width: px-to-rem(30px);
+      height: px-to-rem(30px);
+      font-size:px-to-rem(24px);
+      font-weight: 400;
+      font-family:$font-base;
+      color:$color-dark-grey;
+      border: none;
+
 
     }
   }
+  .btn__organization--btn:hover {
+    background: $base-color-primary;
+    color:$color-dark-grey;
+    border: 1px solid $color-dark-grey;
 
+  }
+
+  .btn__organization--btn:active,
+  .btn__organization--btn:focus,
+  {
+    border: 1px solid $color-grey;
+    width: px-to-rem(40px);
+    height: px-to-rem(50px);
+  }
 
 }

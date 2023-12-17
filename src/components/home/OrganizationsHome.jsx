@@ -5,56 +5,56 @@ import {useState, useEffect} from "react";
 const organizationsData = {
     fundacje: [
         {
-            name: "Fundacjom",
-            subtext: "Dbam o Zdrowie",
+            name: "Fundacja",
+            subtext: '" Dbam o Zdrowie"',
             mission: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
             needs: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
         },
         {
-            name: "Fundacjom",
-            subtext:'Dla dzieci',
+            name: "Fundacja",
+            subtext:'"Dla dzieci " ',
             mission: "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
             needs: "ubrania, meble, zabawki",
         },
         {
-            name: "Fundacjom",
-            subtext: "Bez domu",
+            name: "Fundacja",
+            subtext: '"Bez domu"',
             mission: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
             needs: "ubrania, jedzenie, ciepłe koce",
         },
         {
-            name: "Fundacjom",
-            subtext:'Dbam o Zdrowie -2',
+            name: "Fundacja",
+            subtext:'"Dbam o Zdrowie -2"',
             mission: " Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
             needs: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
         },
         {
-            name: "Fundacjom",
-            subtext:'Dla dzieci-2',
+            name: "Fundacja",
+            subtext:'"Dla dzieci-2"',
             mission: "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
             needs: "ubrania, meble, zabawki",
         },
         {
-            name: "Fundacjom",
-            subtext: "Bez domu-2",
+            name: "Fundacja",
+            subtext: '"Bez domu-2"',
             mission: " Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
             needs: "ubrania, jedzenie, ciepłe koce",
         },
         {
-            name: "Fundacjom",
-            subtext:'Dbam o Zdrowie -3',
+            name: "Fundacja",
+            subtext:'"Dbam o Zdrowie -3"',
             mission: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
             needs: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
         },
         {
-            name: "Fundacjom",
-            subtext:'Dla dzieci-3',
+            name: "Fundacja",
+            subtext:'"Dla dzieci-3"',
             mission: "Cel i misja:Pomoc dzieciom z ubogich rodzin.",
             needs: "ubrania, meble, zabawki",
         },
         {
-            name: "Fundacjom",
-            subtext: "Bez domu-3",
+            name: "Fundacja",
+            subtext: '"Bez domu-3"',
             mission: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
             needs: "ubrania, jedzenie, ciepłe koce",
         },
@@ -63,37 +63,37 @@ const organizationsData = {
     organizacje: [
         {
             name: "Organizacjom pozarzdowym",
-            subtext:"Lorem Ipsum 1",
+            subtext:'"Lorem Ipsum 1"',
             mission: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
             needs: "Egestas, sed, tempus",
         },
         {
             name: "Organizacjom pozarzdowym",
-            subtext:"Lorem Ipsum 2",
+            subtext:'"Lorem Ipsum 2"',
             mission: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
             needs: "Ut, aliquam, purus, sit, amet",
         },
         {
             name: "Organizacjom pozarzdowym",
-            subtext:"Lorem Ipsum 3",
+            subtext:'"Lorem Ipsum 3"',
             mission: "Scelerisque in dictum non consectetur a erat nam.",
             needs: "Mi, quis, hendrerit, dolor",
         },
         {
             name: "Organizacjom pozarzdowym",
-            subtext:"Lorem Ipsum 4",
+            subtext:'"Lorem Ipsum 4"',
             mission: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
             needs: "Egestas, sed, tempus",
         },
         {
             name: "Organizacjom pozarzdowym",
-            subtext:"Lorem Ipsum 5",
+            subtext:'"Lorem Ipsum 5"',
             mission: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
             needs: "Ut, aliquam, purus, sit, amet",
         },
         {
             name: "Organizacjom pozarzdowym",
-            subtext:"Lorem Ipsum 6",
+            subtext:'"Lorem Ipsum 6"',
             mission: "Scelerisque in dictum non consectetur a erat nam.",
             needs: "Mi, quis, hendrerit, dolor",
         },
@@ -102,19 +102,19 @@ const organizationsData = {
     zbiorki: [
         {
             name: "Lokalnym zbiórkom ",
-            subtext:"Lorem Ipsum 1",
+            subtext:'"Lorem Ipsum 1"',
             mission: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
             needs: "Egestas, sed, tempus",
         },
         {
             name: "Lokalnym zbiórkom ",
-            subtext:"Lorem Ipsum 2",
+            subtext:'"Lorem Ipsum 2"',
             mission: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
             needs: "Ut, aliquam, purus, sit, amet",
         },
         {
             name: "Lokalnym zbiórkom ",
-            subtext:"Lorem Ipsum 3",
+            subtext:'"Lorem Ipsum 3"',
             mission: "Scelerisque in dictum non consectetur a erat nam.",
             needs: "Mi, quis, hendrerit, dolor",
         },
@@ -195,17 +195,19 @@ const OrganizationsHome = () => {
                        {
                            activeItems.slice(currentPage * itemsPerPage - itemsPerPage, currentPage * itemsPerPage).map(item => (
                                <div
-                                   className="fund__dsc"
+                                   className="fund__item__dsc"
                                    key={item.id}>
 
-                                   <div className="fund__dsc__hdl">
+                                   <div className="fund__item__dsc--hdl">
                                    {item.name}
+                                       &nbsp;
+                                       &nbsp;
                                    {item.subtext}
                                    </div>
-                                   <div className="fund__dsc__txt">
+                                   <div className="fund__item__dsc--txt">
                                    {item.mission}
                                </div>
-                                   <div className="fund__dsc__txt--right">
+                                   <div className="fund__item__dsc--txt__right">
                                    {item.needs}
                                </div>
 
@@ -223,7 +225,10 @@ const OrganizationsHome = () => {
                                <button
                                    className="btn__organization--btn"
                                    key={index}
-                                   style={{background: currentPage === index + 1 ? 'transparent' : ''}}
+                                   style={{background: currentPage === index + 1 ? 'white' : '',
+
+
+                                   }}
                                    onClick={() =>
                                        setCurrentPage(index + 1)}
                                >
