@@ -5,6 +5,8 @@
 
 
 .organization {
+  height: px-to-rem(862px);
+  width: auto;
 
   .title__organization{
     @include flex(center, center, column);
@@ -39,41 +41,54 @@
       font-weight: 200;
       color: $color-dark-grey ;
       border: px-to-rem(0.75px) solid $color-dark-grey  ;
+      background-color: white;
       width: px-to-rem(208px);
       height: px-to-rem(79px);
       text-align: center;
       padding: px-to-rem(10px) px-to-rem(13px);
+      margin-top: px-to-rem(62px);
       @include flex(center, center);
 
     }
-    &__org{
-      font-size: px-to-rem(24px);
-      font-family:$font-base;
-      font-weight: 200;
-      color: $color-dark-grey ;
-      text-align: right;
-    }
-    &__local{
-      font-size: px-to-rem(24px);
-      font-family:$font-base;
-      font-weight: 200;
-      color: $color-dark-grey ;
-      text-align: right;
-    }
-  }
+     }
 
   .fund{
-    &__descryption{}
-    &__health{}
-    &__kids{}
-    &__wihoutHome{}
 
+    &__descryption{
+      @include flex(center,center, );
+      font-family:$font-base;
+      font-size: px-to-rem(25px);
+      text-align: center;
+      color: $color-dark-grey;
+      opacity: 1;
+      margin-top: px-to-rem(80px);
+
+
+    }
+    &__item {
+      @include flex(center,center, column);
+      margin-top: px-to-rem(66px);
+      &__dsc {
+
+        &__hdl {
+
+        }
+
+        &__txt {
+          &--right {
+          }
+        }
+
+      }
+    }
   }
 
   .btn__organization{
 
 
+    &--btn{
 
+    }
   }
 
 

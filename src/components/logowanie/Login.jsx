@@ -1,7 +1,7 @@
 import '../../scss/Login.scss'
 import {Link, Link as RouterLink} from 'react-router-dom';
 import decoration from '../../assets/images/decoration.png'
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 
     const Login = () => {
