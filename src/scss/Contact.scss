@@ -6,18 +6,73 @@
 
 .contact__section{
   margin-top: px-to-rem(200px);
+  height: px-to-rem(1100px);
+  width: 100%;
+  position: relative;
 
-  .contact__img{  }
-  .box__right{
-    &--hdl{}
-    &--decoration{}
+
+  .contact__img{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -42;
+    opacity: 0.2;
+    margin-top: px-to-rem(80px);
+  }
+
+  .box__right{;
+    @include flex(flex-end, center, column);
+    margin-top: px-to-rem(200px);
+    margin-right: px-to-rem(52px);
+    margin-left: px-to-rem(1150px);
+
+
+    &--hdl{
+    font-family:$font-base;
+    font-size: px-to-rem(38px);
+    font-weight: 400;
+    color:$color-dark-grey;
+    letter-spacing: px-to-rem(-0.76px);
+    opacity: 1;
+    text-align: center;
+
+    }
+    &--decoration{
+      margin-top: px-to-rem(20px);
+      width: px-to-rem(253px);
+      height: px-to-rem(33px);
+      opacity: 1;
+
+    }
   }
 
   .contact__form{
-    &--label{}
-    &--in{}
+    @include flex(flex-end, center, column);
+    margin-top: px-to-rem(76.9px);
+    margin-left: px-to-rem(1230px);
+    margin-right: px-to-rem(539px);
+
+    &--label{
+
+    }
+    &--in{
+
+    }
     &__btn{
-      &--btn{}
+      &--btn{
+
+      }
+    }
+
+  }
+
+  .footer{
+    @include flex(flex-end, center, column);
+    &__copy{}
+    &__icons{
+      &--icon{}
     }
   }
 
