@@ -242,11 +242,11 @@ const OrganizationsHome = () => {
 
                                    onClick={() => setCurrentPage(index + 1)}
                                    onMouseOver={(e) => {
-                                       // Obramowanie będzie widoczne tylko po najechaniu na przycisk.
+
                                        e.target.style.border = '0.75px solid black';
                                    }}
                                    onMouseOut={(e) => {
-                                       // Przywracamy przejrzyste obramowanie po opuszczeniu myszką przycisku.
+
                                        e.target.style.border = '0.75px solid transparent';
                                    }}
                                >

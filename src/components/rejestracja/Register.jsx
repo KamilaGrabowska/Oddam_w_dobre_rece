@@ -1,7 +1,7 @@
 import {Link, Link as RouterLink} from "react-router-dom";
 import decoration from "../../assets/images/decoration.png";
 import '../../scss/Register.scss'
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const Register = () => {
 
@@ -21,13 +21,13 @@ const Register = () => {
         setPasswordConfirmation(e.target.value);
     };
 
-    const handleLoginSubmit = (e) => {
-        e.preventDefault();
-        // Perform login logic with the login and password values
-        console.log('Login:', login);
-        console.log('Password:', password);
-        // Add your authentication logic here
-    };
+    // const handleLoginSubmit = (e) => {
+    //     e.preventDefault();
+    //     // Perform login logic with the login and password values
+    //     console.log('Login:', login);
+    //     console.log('Password:', password);
+    //     // Add your authentication logic here
+    // };
 
     const handleRegisterSubmit = (e) => {
         e.preventDefault();

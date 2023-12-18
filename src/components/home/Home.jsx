@@ -3,6 +3,7 @@ import HomeThreeColumns from './HomeThreeColumns';
 import HomeSimpleSteps from './HomeSimpleSteps.jsx'
 import About from './About.jsx'
 import OrganizationsHome from "./OrganizationsHome.jsx";
+import Contact from "./Contact.jsx";
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <HomeSimpleSteps />
             <About />
             <OrganizationsHome/>
+            <Contact />
         </div>
     );
 };

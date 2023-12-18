@@ -76,6 +76,7 @@
       margin-top: px-to-rem(66px);
       margin-left: px-to-rem(278px);
       margin-right: px-to-rem(278px);
+      position: relative;
 
       &__dsc {
         border-bottom: px-to-rem(0.75px) solid $color-dark-grey;
@@ -94,7 +95,7 @@
         }
 
         &--txt {
-
+          position: absolute;
           margin-top: px-to-rem(6px);
           margin-bottom: px-to-rem(-16px);
           font-family: $font-alt-italicLight;
@@ -105,11 +106,13 @@
 
 
           &__right {
+            position: relative;
             @include flex(flex-end , flex-end,);
             text-align: right;
             font-weight: 200;
             font-size:$base-font-size;
-            font-family:'Merriweather, Light', sans-serif;
+            color:$color-dark-grey ;
+            font-family:' Merriweather, Light',sans-serif;
             padding-top:px-to-rem(15px) ;
             padding-bottom: px-to-rem(20px);
             padding-left: px-to-rem(900px);

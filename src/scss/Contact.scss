@@ -1,0 +1,24 @@
+@import "settings/fonts";
+@import "settings/colors";
+@import "utils/functions";
+@import "utils/mixin";
+
+
+.contact__section{
+  margin-top: px-to-rem(200px);
+
+  .contact__img{  }
+  .box__right{
+    &--hdl{}
+    &--decoration{}
+  }
+
+  .contact__form{
+    &--label{}
+    &--in{}
+    &__btn{
+      &--btn{}
+    }
+  }
+
+}
