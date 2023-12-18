@@ -77,19 +77,23 @@
       display: inline-block;
       border: solid px-to-rem(1px) transparent;
       margin-inline: 15px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+      padding-inline: 10px;
     }
 
 
     a:hover {
-      border-bottom: 0.75px solid $color-dark-grey;
+      border: px-to-rem(0.75px) solid $color-dark-grey;
       opacity: 1;
       text-decoration: none;
+      cursor: pointer;
+
     }
   }
 
   &__item--active:after {
     opacity: 0;
-    //padding: px-to-rem(9px) px-to-rem(20px);
     content: "";
   }
 }

@@ -36,6 +36,7 @@
     justify-content: center;
 
 
+
     &__fund{
       font-size: px-to-rem(24px);
       font-family:$font-base;
@@ -49,9 +50,13 @@
       padding: px-to-rem(10px) px-to-rem(13px);
       margin-top: px-to-rem(62px);
       @include flex(center, center);
+      transition: all 400ms ease-in-out;
+
 
     }
      }
+
+
 
   .fund{
 
@@ -133,31 +138,21 @@
       text-align: center;
       background: white;
       cursor: pointer;
-      transition: background 0.3s, color 0.3s;
-      width: px-to-rem(30px);
-      height: px-to-rem(30px);
+      transition: background 400ms ease-in-out;
+
       font-size:px-to-rem(24px);
       font-weight: 400;
       font-family:$font-base;
       color:$color-dark-grey;
-      border: none;
+      width: px-to-rem(40px);
+        height: px-to-rem(50px);
+        padding-bottom: 9px;
+        padding-top: 9px;
+        padding-inline: 10px;
 
 
     }
   }
-  .btn__organization--btn:hover {
-    background: $base-color-primary;
-    color:$color-dark-grey;
-    border: 1px solid $color-dark-grey;
 
-  }
-
-  .btn__organization--btn:active,
-  .btn__organization--btn:focus,
-  {
-    border: 1px solid $color-grey;
-    width: px-to-rem(40px);
-    height: px-to-rem(50px);
-  }
 
 }

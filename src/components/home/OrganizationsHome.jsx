@@ -175,8 +175,18 @@ const OrganizationsHome = () => {
                                onClick={() => setActiveTab(index)}
                                style={{
                                    background: activeTab === index ? 'transparent' : '',
-
+                                   border:'0.75px solid transparent',
                                }}
+                               onMouseOver={(e) => {
+                                   if (activeTab !== index) {
+                                       e.target.style.border = '0.75px solid black';
+                                   }
+                               }}
+                               onMouseOut={(e) => {
+                                   e.target.style.border = '0.75px solid transparent';
+                               }}
+
+
                            >
                                {tab}</button>
                        ))
@@ -225,12 +235,20 @@ const OrganizationsHome = () => {
                                <button
                                    className="btn__organization--btn"
                                    key={index}
-                                   style={{background: currentPage === index + 1 ? 'white' : '',
-
-
+                                   style={{
+                                       background: currentPage === index + 1 ? 'white' : '',
+                                       border: '0.75px solid transparent',
                                    }}
-                                   onClick={() =>
-                                       setCurrentPage(index + 1)}
+
+                                   onClick={() => setCurrentPage(index + 1)}
+                                   onMouseOver={(e) => {
+                                       // Obramowanie będzie widoczne tylko po najechaniu na przycisk.
+                                       e.target.style.border = '0.75px solid black';
+                                   }}
+                                   onMouseOut={(e) => {
+                                       // Przywracamy przejrzyste obramowanie po opuszczeniu myszką przycisku.
+                                       e.target.style.border = '0.75px solid transparent';
+                                   }}
                                >
                                    {index + 1} </button>)
                        }
