@@ -66,10 +66,10 @@
     &__img {
       @include flex(flex-end);
       background: transparent no-repeat padding-box;
-      width: px-to-rem(1790px);
+      //width: px-to-rem(1790px);
       height: auto;
       opacity: 1;
-      margin-right: px-to-rem(-350px);
+      margin-right: px-to-rem(-370px);
 
 
 
