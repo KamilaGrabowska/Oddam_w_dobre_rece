@@ -55,7 +55,14 @@
     margin-right: px-to-rem(539px);
 
     &--label{
-
+     font-size: px-to-rem(16px);
+      font-family: $font-login-label;
+      font-weight: 600;
+      text-align: right;
+      color:$color-dark-grey ;
+      opacity: 1;
+      width: px-to-rem(190px);
+      height: px-to-rem(22px);
     }
     &--in{
 
