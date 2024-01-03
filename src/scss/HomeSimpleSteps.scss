@@ -67,8 +67,17 @@
         font-weight: 300;
         font-size: $base-font-size;
         color: $color-dark-grey;
-        border-bottom: px-to-rem(0.85px) solid $color-grey;
-        padding-bottom: px-to-rem(15px);
+        //border-bottom: px-to-rem(0.85px) solid $color-grey;
+        //padding-bottom: px-to-rem(15px);
+        &::after {
+          font-size: px-to-rem(18px);
+          content: "";
+          display: block;
+          width: px-to-rem(70px);
+          border: px-to-rem(1px) solid;
+          background-color: $color-grey;
+          margin: px-to-rem(20px) auto 0;
+        }
 
       }
 
