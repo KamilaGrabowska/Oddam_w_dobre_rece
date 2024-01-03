@@ -4,14 +4,15 @@
 @import "utils/mixin";
 
 
-.contact__section{
+.contact__section {
   margin-top: px-to-rem(200px);
   height: px-to-rem(1100px);
   width: 100%;
-  position: relative;
+  position:absolute;
 
 
-  .contact__img{
+
+  .contact__img {
     object-fit: cover;
     object-position: center;
     position: absolute;
@@ -22,24 +23,25 @@
     margin-top: px-to-rem(80px);
   }
 
-  .box__right{;
+  .box__right {;
     @include flex(flex-end, center, column);
     margin-top: px-to-rem(200px);
     margin-right: px-to-rem(52px);
     margin-left: px-to-rem(1150px);
 
 
-    &--hdl{
-    font-family:$font-base;
-    font-size: px-to-rem(38px);
-    font-weight: 400;
-    color:$color-dark-grey;
-    letter-spacing: px-to-rem(-0.76px);
-    opacity: 1;
-    text-align: center;
+    &--hdl {
+      font-family: $font-base;
+      font-size: px-to-rem(38px);
+      font-weight: 400;
+      color: $color-dark-grey;
+      letter-spacing: px-to-rem(-0.76px);
+      opacity: 1;
+      text-align: center;
 
     }
-    &--decoration{
+
+    &--decoration {
       margin-top: px-to-rem(20px);
       width: px-to-rem(253px);
       height: px-to-rem(33px);
@@ -48,39 +50,171 @@
     }
   }
 
-  .contact__form{
-    @include flex(flex-end, center, column);
-    margin-top: px-to-rem(76.9px);
-    margin-left: px-to-rem(1230px);
-    margin-right: px-to-rem(539px);
+  .contact__form {
 
-    &--label{
-     font-size: px-to-rem(16px);
-      font-family: $font-login-label;
-      font-weight: 600;
-      text-align: right;
-      color:$color-dark-grey ;
-      opacity: 1;
-      width: px-to-rem(190px);
-      height: px-to-rem(22px);
-    }
-    &--in{
 
-    }
-    &__btn{
-      &--btn{
+
+    &--group {
+
+
+      &--label {
+
+
+
+      }
+
+      &--in {
+
 
       }
     }
+  }
+
+   .contact__btn {
+
 
   }
 
-  .footer{
-    @include flex(flex-end, center, column);
-    &__copy{}
-    &__icons{
-      &--icon{}
+
+  .footer {
+
+
+
+
+    &__copy {
+
+    }
+
+    &__icons {
+      &--icon {
+
+      }
     }
   }
 
 }
+
+//
+//
+//.contact__section {
+//  margin-top: px-to-rem(200px);
+//  height: px-to-rem(1100px);
+//  width: 100%;
+//  position:absolute;
+//
+//
+//  .contact__img {
+//    object-fit: cover;
+//    object-position: center;
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    z-index: -42;
+//    opacity: 0.2;
+//    margin-top: px-to-rem(80px);
+//  }
+//
+//  .box__right {;
+//    @include flex(flex-end, center, column);
+//    margin-top: px-to-rem(200px);
+//    margin-right: px-to-rem(52px);
+//    margin-left: px-to-rem(1150px);
+//
+//
+//    &--hdl {
+//      font-family: $font-base;
+//      font-size: px-to-rem(38px);
+//      font-weight: 400;
+//      color: $color-dark-grey;
+//      letter-spacing: px-to-rem(-0.76px);
+//      opacity: 1;
+//      text-align: center;
+//
+//    }
+//
+//    &--decoration {
+//      margin-top: px-to-rem(20px);
+//      width: px-to-rem(253px);
+//      height: px-to-rem(33px);
+//      opacity: 1;
+//
+//    }
+//  }
+//
+//  .contact__form {
+//    margin-top: px-to-rem(70px);
+//    margin-left: px-to-rem(1230px);
+//    margin-right: px-to-rem(539px);
+//    position: absolute;
+//
+//
+//    &--group {
+//      @include flex(flex-end, space-between, row);
+//      font-family: $font-login-label;
+//      font-weight: 600;
+//      color: $color-dark-grey;
+//      opacity: 1;
+//      font-size: px-to-rem(16px);
+//      margin-top: px-to-rem(40px);
+//      float: right;
+//      width:auto;
+//      height: px-to-rem(50px);
+//
+//      &--label {
+//        text-align: right;
+//        width: px-to-rem(190px);
+//        display: inline-block;
+//        height:px-to-rem(11px);
+//
+//
+//      }
+//
+//      &--in {
+//        text-align: right;
+//        font-weight: 200;
+//        font-family: $font-base;
+//        font-size: $base-font-size;
+//        color: $color-light-grey;
+//        opacity: 1;
+//
+//      }
+//    }
+//  }
+//
+//  .contact__btn {
+//    position: relative;
+//    border: px-to-rem(0.75px) solid $color-dark-grey;
+//    opacity: 1;
+//    font-family: $font-base;
+//    font-size: $base-font-size;
+//    font-weight: 300;
+//    color: $color-black;
+//    text-align: left;
+//    width: px-to-rem(150px);
+//    height: px-to-rem(50px);
+//    padding: px-to-rem(13px) px-to-rem(52px);
+//    background-color:$base-color-primary;
+//    margin-top: px-to-rem(60px);
+//    margin-left: px-to-rem(550px);
+//
+//  }
+//
+//
+//  .footer {
+//    position: relative;
+//    @include flex(flex-end, flex-end, row);
+//
+//
+//
+//    &__copy {
+//
+//    }
+//
+//    &__icons {
+//      &--icon {
+//
+//      }
+//    }
+//  }
+//
+//}
