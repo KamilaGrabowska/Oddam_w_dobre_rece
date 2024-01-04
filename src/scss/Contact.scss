@@ -7,7 +7,7 @@
   margin-top: px-to-rem(200px);
   height: px-to-rem(1100px);
   width: 100%;
-  position: absolute;
+  position: relative;
 
 
   .contact__img {
@@ -19,6 +19,7 @@
     z-index: -42;
     opacity: 0.2;
     margin-top: px-to-rem(80px);
+
   }
 
   .box__right {;
@@ -50,54 +51,87 @@
     }
   }
 
-  .contact__form {
-    margin-top: px-to-rem(77px);
-    gap: px-to-rem(40px);
-    margin-left: px-to-rem(1500px);
-    margin-right: px-to-rem(142px);
+
+    .contact__form {
+      margin-top: px-to-rem(77px);
+      gap: px-to-rem(40px);
+      margin-left: px-to-rem(1500px);
+      margin-right: px-to-rem(142px);
+      width: 100%;
 
 
-    &--group {
-      @include flex(flex-end, center, row);
-      gap: px-to-rem(20px);
-      width: px-to-rem(256px);
-      height: px-to-rem(62px);
+      &--group {
+        @include flex(flex-end, center, row);
+        gap: px-to-rem(20px);
+        width: px-to-rem(256px);
+        height: px-to-rem(62px);
+
+
+        &--1 {
 
 
 
+          &--label {
+            font-family:$font-login-label ;
+            text-align: left;
+            font-size: px-to-rem(16px);
+            color: $color-dark-grey;
+            font-weight: 600;
+            opacity: 1;
+          }
 
-      &--1 {
 
+          &--in {
+            margin-top: px-to-rem(12px);
+            margin-bottom: px-to-rem(4px);
 
-        &--label {
+          }
 
         }
+      }
 
+      &--msg {
+        @include flex(center, flex-start, column);
+        margin-top: px-to-rem(40px);
+        color: blue;
 
-        &--in {
-          margin-top: px-to-rem(12px);
-
+        &--label2 {
+          font-family:$font-login-label ;
+          text-align: left;
+          font-size: px-to-rem(16px);
+          color: $color-dark-grey;
+          opacity: 1;
+          font-weight: 600;
         }
 
-      }
-    }
+        &--in2 {
+          margin-top: px-to-rem(10px);
+          margin-bottom: px-to-rem(4px);
+          resize: none;
+          color:$color-dark-grey;
 
-    &--msg {
-      @include flex(center, flex-start,  column);
-      margin-top: px-to-rem(100px);
-      &--label2{
-
+        }
       }
-      &--in2 {}
-    }
+
 
 
   }
-
   .contact__btn {
     @include flex(flex-end);
-    margin-top: px-to-rem(150px);
-    color: blue;
+        position: relative;
+        border: px-to-rem(0.75px) solid $color-dark-grey;
+        opacity: 1;
+        font-family: $font-base;
+        font-size: $base-font-size;
+        font-weight: 300;
+        color: $color-black;
+        text-align: left;
+        width: px-to-rem(150px);
+        height: px-to-rem(50px);
+        padding: px-to-rem(13px) px-to-rem(52px);
+        background-color:$base-color-primary;
+        margin-top: px-to-rem(60px);
+        margin-left: px-to-rem(450px);
 
   }
 

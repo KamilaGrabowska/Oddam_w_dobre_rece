@@ -27,40 +27,40 @@ const Contact = () => {
 
             <form action="" className="contact__form">
                 <div className="contact__form--group">
-                <div className="contact__form--group--1">
-                    <label className="contact__form--group--1--label" htmlFor="name">
-                        Wpisz swoje imię
-                    </label>
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Krzysztof"
-                        className="contact__form--group--1--in"
-                        style={{
-                            border: 'none',
-                            borderBottom:'1px solid rgba(112, 112, 112, 1)',
+                    <div className="contact__form--group--1">
+                        <label className="contact__form--group--1--label" htmlFor="name">
+                            Wpisz swoje imię
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Krzysztof"
+                            className="contact__form--group--1--in"
+                            style={{
+                                border: 'none',
+                                borderBottom: '1px solid rgba(112, 112, 112, 1)',
 
 
-                        }}
-                    />
-                </div>
+                            }}
+                        />
+                    </div>
 
-                <div className="contact__form--group--1">
-                    <label className="contact__form--group--1--label" htmlFor="email">
-                        Wpisz swój email
-                    </label>
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="abc@xyz.pl"
-                        className="contact__form--group--1--in"
-                        style={{
-                            border: 'none',
-                            borderBottom:'1px solid rgba(112, 112, 112, 1)',
+                    <div className="contact__form--group--1">
+                        <label className="contact__form--group--1--label" htmlFor="email">
+                            Wpisz swój email
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="abc@xyz.pl"
+                            className="contact__form--group--1--in"
+                            style={{
+                                border: 'none',
+                                borderBottom: '1px solid rgba(112, 112, 112, 1)',
 
-                        }}
-                    />
-                </div>
+                            }}
+                        />
+                    </div>
                 </div>
 
                 <div className="contact__form--msg">
@@ -71,16 +71,18 @@ const Contact = () => {
                         className="contact__form--msg--in2"
                         id="message"
                         name="text"
-                        rows="5"
-                        cols="20"
                         placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                          ut aliquip ex ea commodo consequat."
+
                         style={{
                             border: 'none',
-                            borderBottom:'1px solid rgba(112, 112, 112, 1)',
+                            borderBottom: '1px solid rgba(112, 112, 112, 1)',
+                            width: '530px',
+                            height: '100px',
 
                         }}
+
                     >
 
                     </textarea>
@@ -89,7 +91,8 @@ const Contact = () => {
                 <button
                     className="contact__btn"
                     type="submit"
-                >Wyślij</button>
+                >Wyślij
+                </button>
             </form>
 
             <div className="footer">
@@ -105,7 +108,7 @@ const Contact = () => {
             </div>
 
         </section>
-);
+    );
 };
 
 export default Contact;
