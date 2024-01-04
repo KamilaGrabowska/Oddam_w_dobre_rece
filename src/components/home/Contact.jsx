@@ -27,14 +27,15 @@ const Contact = () => {
 
             <form action="" className="contact__form">
                 <div className="contact__form--group">
-                    <label className="contact__form--label" htmlFor="name">
+                <div className="contact__form--group--1">
+                    <label className="contact__form--group--1--label" htmlFor="name">
                         Wpisz swoje imię
                     </label>
                     <input
                         type="text"
                         id="name"
                         placeholder="Krzysztof"
-                        className="contact__form--in"
+                        className="contact__form--group--1--in"
                         style={{
                             border: 'none',
                             borderBottom:'1px solid rgba(112, 112, 112, 1)',
@@ -44,15 +45,15 @@ const Contact = () => {
                     />
                 </div>
 
-                <div className="contact__form--group">
-                    <label className="contact__form--label" htmlFor="email">
+                <div className="contact__form--group--1">
+                    <label className="contact__form--group--1--label" htmlFor="email">
                         Wpisz swój email
                     </label>
                     <input
                         type="email"
                         id="email"
                         placeholder="abc@xyz.pl"
-                        className="contact__form--in"
+                        className="contact__form--group--1--in"
                         style={{
                             border: 'none',
                             borderBottom:'1px solid rgba(112, 112, 112, 1)',
@@ -60,12 +61,14 @@ const Contact = () => {
                         }}
                     />
                 </div>
+                </div>
 
-                <div className="contact__form--group">
-                    <label className="contact__form--label" htmlFor="message">
+                <div className="contact__form--msg">
+                    <label className="contact__form--msg--label2" htmlFor="message">
                         Wpisz swoją wiadomość
                     </label>
                     <textarea
+                        className="contact__form--msg--in2"
                         id="message"
                         name="text"
                         rows="5"
@@ -75,7 +78,8 @@ const Contact = () => {
                          ut aliquip ex ea commodo consequat."
                         style={{
                             border: 'none',
-                            borderBottom:'1px solid rgba(112, 112, 112, 1)'
+                            borderBottom:'1px solid rgba(112, 112, 112, 1)',
+
                         }}
                     >
 

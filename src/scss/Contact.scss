@@ -3,13 +3,11 @@
 @import "utils/functions";
 @import "utils/mixin";
 
-
 .contact__section {
   margin-top: px-to-rem(200px);
   height: px-to-rem(1100px);
   width: 100%;
-  position:absolute;
-
+  position: absolute;
 
 
   .contact__img {
@@ -39,6 +37,7 @@
       opacity: 1;
       text-align: center;
 
+
     }
 
     &--decoration {
@@ -47,38 +46,65 @@
       height: px-to-rem(33px);
       opacity: 1;
 
+
     }
   }
 
   .contact__form {
-
+    margin-top: px-to-rem(77px);
+    gap: px-to-rem(40px);
+    margin-left: px-to-rem(1500px);
+    margin-right: px-to-rem(142px);
 
 
     &--group {
+      @include flex(flex-end, center, row);
+      gap: px-to-rem(20px);
+      width: px-to-rem(256px);
+      height: px-to-rem(62px);
 
 
-      &--label {
 
 
+      &--1 {
 
-      }
 
-      &--in {
+        &--label {
 
+        }
+
+
+        &--in {
+          margin-top: px-to-rem(12px);
+
+        }
 
       }
     }
+
+    &--msg {
+      @include flex(center, flex-start,  column);
+      margin-top: px-to-rem(100px);
+      &--label2{
+
+      }
+      &--in2 {}
+    }
+
+
   }
 
-   .contact__btn {
-
+  .contact__btn {
+    @include flex(flex-end);
+    margin-top: px-to-rem(150px);
+    color: blue;
 
   }
 
 
   .footer {
-
-
+    @include flex(flex-end);
+    margin-top: px-to-rem(50px);
 
 
     &__copy {
@@ -94,8 +120,7 @@
 
 }
 
-//
-//
+
 //.contact__section {
 //  margin-top: px-to-rem(200px);
 //  height: px-to-rem(1100px);
