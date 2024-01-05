@@ -4,7 +4,7 @@
 @import "utils/mixin";
 
 .aboutUs {
-  //max-width: px-to-rem(1900px);
+  width: auto;
   margin-top: px-to-rem(250px);
   background-color: $color-light_second-grey;
   @include flex(space-between, center);
@@ -18,6 +18,8 @@
       text-align: center;
       font-family: $font-base;
       font-weight: 300;
+      margin: auto;
+
 
 
 
@@ -46,13 +48,16 @@
         margin-left: px-to-rem(149px);
         margin-right: px-to-rem(152px);
         line-height: 3.0rem;
+        width: auto;
+        height: auto;
+
 
       }
 
       .imgSignature {
         width: px-to-rem(209px);
         height: px-to-rem(148.84px);
-        margin: px-to-rem(40.09px) px-to-rem(152px) px-to-rem(185px) px-to-rem(596px);
+        margin: px-to-rem(40.09px) px-to-rem(152px) px-to-rem(185px) px-to-rem(600px);
         @include flex(flex-end);
       }
     }
@@ -66,7 +71,7 @@
     &__img {
       @include flex(flex-end);
       background: transparent no-repeat padding-box;
-      //width: px-to-rem(1790px);
+      width: px-to-rem(1790px);
       height: auto;
       opacity: 1;
       margin-right: px-to-rem(-370px);

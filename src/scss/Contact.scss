@@ -148,14 +148,27 @@
 
 
   .footer {
-    @include flex(space-between, center);
+    @include flex(space-around);
     margin-top: px-to-rem(270px);
+    gap: px-to-rem(568px);
 
 
     &__copyright {
+      @include flex(center);
+      margin-bottom:px-to-rem(22px);
+      margin-left: px-to-rem(950px);
 
       &--text {
-        color: red;
+        width: px-to-rem(235px);
+        height: px-to-rem(24px);
+        font-weight: 400;
+        font-size:$base-font-size;
+        font-family:$font-base;
+        color: $color-dark-grey;
+        text-align: right;
+        opacity: 1;
+
+
       }
 
 
@@ -163,10 +176,13 @@
 
     &__icons {
       @include flex(flex-end);
-
+      gap: px-to-rem(20px);
+      margin-bottom: px-to-rem(19px);
+      margin-right: px-to-rem(145px);
 
       &--icon {
-
+       width: px-to-rem(30px);
+        height: px-to-rem(30px);
       }
     }
   }
