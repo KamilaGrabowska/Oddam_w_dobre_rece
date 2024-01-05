@@ -12,8 +12,8 @@ const Contact = () => {
                  src={background}
                  alt="Blankes on chair"
                  style={{
-                     width: '1900px',
-                     height: '1026px',
+                     width: '1850px',
+                     height: '950px',
                  }}
             />
 
@@ -38,7 +38,7 @@ const Contact = () => {
                             className="contact__form--group--1--in"
                             style={{
                                 border: 'none',
-                                borderBottom: '1px solid rgba(112, 112, 112, 1)',
+                                borderBottom: '1px solid rgba(115, 115, 115, 1)',
 
 
                             }}
@@ -71,15 +71,13 @@ const Contact = () => {
                         className="contact__form--msg--in2"
                         id="message"
                         name="text"
-                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                         ut aliquip ex ea commodo consequat."
+                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
                         style={{
                             border: 'none',
                             borderBottom: '1px solid rgba(112, 112, 112, 1)',
-                            width: '530px',
-                            height: '100px',
+                            width: '455px',
+                            height: '80px',
 
                         }}
 
@@ -96,7 +94,9 @@ const Contact = () => {
             </form>
 
             <div className="footer">
-                <p className="footer__copy">Copyright by Coders Lab</p>
+                <div className="footer__copyright">
+                <p className="footer__copyright--text">Copyright by Coders Lab</p>
+            </div>
                 <div className="footer__icons">
                     <a href="#" className="footer__icons--icon">
                         <img src={Istagram} alt="Instagram"/>

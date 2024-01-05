@@ -24,7 +24,8 @@
 
   .box__right {;
     @include flex(flex-end, center, column);
-    margin-top: px-to-rem(200px);
+    //margin-top: px-to-rem(200px);
+    margin-top: auto;
     margin-right: px-to-rem(52px);
     margin-left: px-to-rem(1150px);
 
@@ -37,6 +38,7 @@
       letter-spacing: px-to-rem(-0.76px);
       opacity: 1;
       text-align: center;
+      margin-top: px-to-rem(270px);
 
 
     }
@@ -52,100 +54,117 @@
   }
 
 
-    .contact__form {
-      margin-top: px-to-rem(77px);
-      gap: px-to-rem(40px);
-      margin-left: px-to-rem(1500px);
-      margin-right: px-to-rem(142px);
-      width: 100%;
+  .contact__form {
+    margin-top: px-to-rem(77px);
+    gap: px-to-rem(40px);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: px-to-rem(1200px);
+    width: 100%;
 
 
-      &--group {
-        @include flex(flex-end, center, row);
-        gap: px-to-rem(20px);
-        width: px-to-rem(256px);
-        height: px-to-rem(62px);
+    &--group {
+      @include flex(flex-end, center, row);
+      gap: px-to-rem(20px);
+      width: px-to-rem(256px);
+      height: px-to-rem(62px);
+      margin-left: px-to-rem(1100px);
 
 
-        &--1 {
+      &--1 {
 
 
-
-          &--label {
-            font-family:$font-login-label ;
-            text-align: left;
-            font-size: px-to-rem(16px);
-            color: $color-dark-grey;
-            font-weight: 600;
-            opacity: 1;
-          }
-
-
-          &--in {
-            margin-top: px-to-rem(12px);
-            margin-bottom: px-to-rem(4px);
-
-          }
-
-        }
-      }
-
-      &--msg {
-        @include flex(center, flex-start, column);
-        margin-top: px-to-rem(40px);
-        color: blue;
-
-        &--label2 {
-          font-family:$font-login-label ;
+        &--label {
+          font-family: $font-login-label;
           text-align: left;
           font-size: px-to-rem(16px);
           color: $color-dark-grey;
-          opacity: 1;
           font-weight: 600;
+          opacity: 1;
         }
 
-        &--in2 {
-          margin-top: px-to-rem(10px);
+
+        &--in {
+          margin-top: px-to-rem(12px);
           margin-bottom: px-to-rem(4px);
-          resize: none;
-          color:$color-dark-grey;
-
         }
+        ::-webkit-input-placeholder { /* Edge */
+          color:$color-light-grey;
+        }
+
+      }
+    }
+
+    &--msg {
+      @include flex(center, flex-start, column);
+      margin-top: px-to-rem(40px);
+
+
+      &--label2 {
+        font-family: $font-login-label;
+        text-align: left;
+        font-size: px-to-rem(16px);
+        color: $color-dark-grey;
+        opacity: 1;
+        font-weight: 600;
+        margin-left: px-to-rem(970px);
       }
 
+      &--in2 {
+        margin-top: px-to-rem(10px);
+        margin-bottom: px-to-rem(4px);
+        resize: none;
+        color: $color-dark-grey;
+        margin-left: px-to-rem(969px);
+
+      }
+      ::-webkit-input-placeholder { /* Edge */
+        color:$color-light-grey;
+      }
+
+    }
 
 
   }
+
   .contact__btn {
     @include flex(flex-end);
-        position: relative;
-        border: px-to-rem(0.75px) solid $color-dark-grey;
-        opacity: 1;
-        font-family: $font-base;
-        font-size: $base-font-size;
-        font-weight: 300;
-        color: $color-black;
-        text-align: left;
-        width: px-to-rem(150px);
-        height: px-to-rem(50px);
-        padding: px-to-rem(13px) px-to-rem(52px);
-        background-color:$base-color-primary;
-        margin-top: px-to-rem(60px);
-        margin-left: px-to-rem(450px);
+    position: relative;
+    border: px-to-rem(0.75px) solid $color-dark-grey;
+    opacity: 1;
+    font-family: $font-base;
+    font-size: $base-font-size;
+    font-weight: 300;
+    color: $color-black;
+    text-align: left;
+    width: px-to-rem(150px);
+    height: px-to-rem(50px);
+    padding: px-to-rem(13px) px-to-rem(52px);
+    background-color: $base-color-primary;
+    margin-top: px-to-rem(60px);
+    margin-left: px-to-rem(1330px);
 
   }
 
 
   .footer {
-    @include flex(flex-end);
-    margin-top: px-to-rem(50px);
+    @include flex(space-between, center);
+    margin-top: px-to-rem(270px);
 
 
-    &__copy {
+    &__copyright {
+
+      &--text {
+        color: red;
+      }
+
 
     }
 
     &__icons {
+      @include flex(flex-end);
+
+
       &--icon {
 
       }
@@ -154,126 +173,3 @@
 
 }
 
-
-//.contact__section {
-//  margin-top: px-to-rem(200px);
-//  height: px-to-rem(1100px);
-//  width: 100%;
-//  position:absolute;
-//
-//
-//  .contact__img {
-//    object-fit: cover;
-//    object-position: center;
-//    position: absolute;
-//    top: 0;
-//    left: 0;
-//    z-index: -42;
-//    opacity: 0.2;
-//    margin-top: px-to-rem(80px);
-//  }
-//
-//  .box__right {;
-//    @include flex(flex-end, center, column);
-//    margin-top: px-to-rem(200px);
-//    margin-right: px-to-rem(52px);
-//    margin-left: px-to-rem(1150px);
-//
-//
-//    &--hdl {
-//      font-family: $font-base;
-//      font-size: px-to-rem(38px);
-//      font-weight: 400;
-//      color: $color-dark-grey;
-//      letter-spacing: px-to-rem(-0.76px);
-//      opacity: 1;
-//      text-align: center;
-//
-//    }
-//
-//    &--decoration {
-//      margin-top: px-to-rem(20px);
-//      width: px-to-rem(253px);
-//      height: px-to-rem(33px);
-//      opacity: 1;
-//
-//    }
-//  }
-//
-//  .contact__form {
-//    margin-top: px-to-rem(70px);
-//    margin-left: px-to-rem(1230px);
-//    margin-right: px-to-rem(539px);
-//    position: absolute;
-//
-//
-//    &--group {
-//      @include flex(flex-end, space-between, row);
-//      font-family: $font-login-label;
-//      font-weight: 600;
-//      color: $color-dark-grey;
-//      opacity: 1;
-//      font-size: px-to-rem(16px);
-//      margin-top: px-to-rem(40px);
-//      float: right;
-//      width:auto;
-//      height: px-to-rem(50px);
-//
-//      &--label {
-//        text-align: right;
-//        width: px-to-rem(190px);
-//        display: inline-block;
-//        height:px-to-rem(11px);
-//
-//
-//      }
-//
-//      &--in {
-//        text-align: right;
-//        font-weight: 200;
-//        font-family: $font-base;
-//        font-size: $base-font-size;
-//        color: $color-light-grey;
-//        opacity: 1;
-//
-//      }
-//    }
-//  }
-//
-//  .contact__btn {
-//    position: relative;
-//    border: px-to-rem(0.75px) solid $color-dark-grey;
-//    opacity: 1;
-//    font-family: $font-base;
-//    font-size: $base-font-size;
-//    font-weight: 300;
-//    color: $color-black;
-//    text-align: left;
-//    width: px-to-rem(150px);
-//    height: px-to-rem(50px);
-//    padding: px-to-rem(13px) px-to-rem(52px);
-//    background-color:$base-color-primary;
-//    margin-top: px-to-rem(60px);
-//    margin-left: px-to-rem(550px);
-//
-//  }
-//
-//
-//  .footer {
-//    position: relative;
-//    @include flex(flex-end, flex-end, row);
-//
-//
-//
-//    &__copy {
-//
-//    }
-//
-//    &__icons {
-//      &--icon {
-//
-//      }
-//    }
-//  }
-//
-//}
