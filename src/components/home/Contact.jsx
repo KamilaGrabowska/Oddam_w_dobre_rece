@@ -76,7 +76,7 @@ const Contact = () => {
                         style={{
                             border: 'none',
                             borderBottom: '1px solid rgba(112, 112, 112, 1)',
-                            width: '455px',
+                            width: '450px',
                             height: '80px',
 
                         }}
