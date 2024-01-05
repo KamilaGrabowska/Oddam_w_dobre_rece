@@ -45,8 +45,7 @@
         letter-spacing: -0.6px;
         font-size: px-to-rem(30px);
         margin-top: px-to-rem(59px);
-        margin-left: px-to-rem(149px);
-        margin-right: px-to-rem(152px);
+        margin-inline: 150px;
         line-height: 3.0rem;
         width: auto;
         height: auto;
@@ -57,8 +56,9 @@
       .imgSignature {
         width: px-to-rem(209px);
         height: px-to-rem(148.84px);
-        margin: px-to-rem(40.09px) px-to-rem(152px) px-to-rem(185px) px-to-rem(600px);
-        @include flex(flex-end);
+        text-align: right;
+        margin-left: px-to-rem(500px);
+        @include flex(flex-end,center);
       }
     }
   }
@@ -71,10 +71,13 @@
     &__img {
       @include flex(flex-end);
       background: transparent no-repeat padding-box;
+
       width: px-to-rem(1790px);
       height: auto;
       opacity: 1;
       margin-right: px-to-rem(-370px);
+
+
 
 
 
