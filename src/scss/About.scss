@@ -4,7 +4,8 @@
 @import "utils/mixin";
 
 .aboutUs {
-  width: auto;
+  max-width:100%;
+  height: px-to-rem(935px);
   margin-top: px-to-rem(250px);
   background-color: $color-light_second-grey;
   @include flex(space-between, center);
@@ -12,7 +13,7 @@
 
   .desc {
     width: 50%;
-
+    height: px-to-rem(835px);
 
     &__content {
       text-align: center;
@@ -24,12 +25,13 @@
 
 
       .hdl {
+        @include flex(center);
         text-align: center;
         flex-grow: 1;
         font-size: px-to-rem(38px);
         letter-spacing: -0.76px;
         opacity: 1;
-        margin-top: px-to-rem(186px);
+        margin-top: px-to-rem(150px);
         color: $color-dark-grey;
         font-weight: 300;
       }
@@ -41,6 +43,7 @@
       }
 
       .info {
+        @include flex(center, wrap);
         text-align: center;
         letter-spacing: -0.6px;
         font-size: px-to-rem(30px);
@@ -54,11 +57,13 @@
       }
 
       .imgSignature {
+        justify-items: flex-end;
+        align-content: flex-end;
         width: px-to-rem(209px);
         height: px-to-rem(148.84px);
         text-align: right;
-        margin-left: px-to-rem(500px);
-        @include flex(flex-end,center);
+        margin-left: px-to-rem(550px);
+
       }
     }
   }
@@ -70,10 +75,7 @@
 
     &__img {
       @include flex(flex-end);
-      background: transparent no-repeat padding-box;
-
-      width: px-to-rem(1790px);
-      height: auto;
+      background: transparent no-repeat;
       opacity: 1;
       margin-right: px-to-rem(-370px);
 
