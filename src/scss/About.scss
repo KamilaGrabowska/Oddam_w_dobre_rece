@@ -4,7 +4,7 @@
 @import "utils/mixin";
 
 .aboutUs {
-  max-width:100%;
+ max-width:100%;
   height: px-to-rem(935px);
   margin-top: px-to-rem(250px);
   background-color: $color-light_second-grey;
@@ -12,8 +12,8 @@
 
 
   .desc {
-    width: 50%;
-    height: px-to-rem(835px);
+    width:50%;
+    //height: px-to-rem(835px);
 
     &__content {
       text-align: center;
@@ -48,7 +48,7 @@
         letter-spacing: -0.6px;
         font-size: px-to-rem(30px);
         margin-top: px-to-rem(59px);
-        margin-inline: 150px;
+        margin-inline: px-to-rem(150px);
         line-height: 3.0rem;
         width: auto;
         height: auto;

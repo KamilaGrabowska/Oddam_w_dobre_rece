@@ -7,7 +7,7 @@ const About = () => {
     return (
         <section className="aboutUs">
             <div className="desc">
-                <div className="desc__content">
+                <div className="desc__content" >
                     <h2 className="hdl">O nas</h2>
                     <img className="img" src={decoration} alt="decoration"/>
                     <p className="info">Nori grape silver beet broccoli kombu beet greens fava bean potato
