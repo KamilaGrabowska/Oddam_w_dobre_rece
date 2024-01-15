@@ -10,7 +10,12 @@ import {useState} from "react";
 
     const Contact = () => {
 
-        const [error, setError] = useState(null);
+        const [errors, setErrors] = useState({
+            email: '',
+            name: '',
+            message: '',
+        });
+
         const [form, setForm] = useState({
             email: '',
             name: '',
@@ -18,32 +23,38 @@ import {useState} from "react";
         });
 
         const validateForm = () => {
-            if (form.name.trim() === '' || form.email.trim() === '' || form.message.trim() === '') {
-                return 'Wszystkie pola są wymagane';
-            }
+            let newErrors = { email: '', name: '', message: '' };
 
-            if (form.name.split(' ').length > 1) {
-                return 'Imię powinno być jednym wyrazem';
+            if (form.name.trim() === '') {
+                newErrors.name = 'Imię jest wymagane';
+            } else if (form.name.split(' ').length > 1) {
+                newErrors.name = 'Imię powinno być jednym wyrazem';
             }
 
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(form.email)) {
-                return 'Podany email jest niepoprawny';
+            if (form.email.trim() === '') {
+                newErrors.email = 'Email jest wymagany';
+            } else if (!emailPattern.test(form.email)) {
+                newErrors.email = 'Podany email jest niepoprawny';
             }
 
-            if (form.message.length < 120) {
-                return 'Wiadomość musi mieć co najmniej 120 znaków';
+            if (form.message.trim() === '') {
+                newErrors.message = 'Wiadomość jest wymagana';
+            } else if (form.message.length < 120) {
+                newErrors.message = 'Wiadomość musi mieć co najmniej 120 znaków';
             }
 
-            return null;
+            setErrors(newErrors);
+
+            // Sprawdź, czy są jakiekolwiek błędy
+            return Object.values(newErrors).every((error) => error === '');
         };
 
         const handleSubmit = async (e) => {
             e.preventDefault();
 
-            const validationError = validateForm();
-            if (validationError) {
-                setError(validationError);
+            if (!validateForm()) {
+                // Jeśli są błędy walidacji, przerwij obsługę submit
                 return;
             }
 
@@ -64,7 +75,7 @@ import {useState} from "react";
                 const responseData = await response.json();
 
                 if (responseData.status === 'success') {
-                    setError(null);
+                    setErrors({ email: '', name: '', message: '' }); // Zresetuj błędy
                     console.log('Formularz został wysłany pomyślnie!');
                     setForm({
                         email: '',
@@ -75,7 +86,7 @@ import {useState} from "react";
                     throw new Error('Wystąpił problem z wysłaniem danych.');
                 }
             } catch (error) {
-                setError(error.message);
+                console.error(error.message);
             }
         };
 
@@ -83,6 +94,12 @@ import {useState} from "react";
             setForm({
                 ...form,
                 [e.target.name]: e.target.value,
+            });
+
+            // Zresetuj błąd po wprowadzeniu zmiany w polu
+            setErrors({
+                ...errors,
+                [e.target.name]: '',
             });
         };
 
@@ -128,7 +145,7 @@ import {useState} from "react";
                                 }}
                             />
                         </div>
-
+                        <div className="error-message">{errors.name}</div>
                         <div className="contact__form--group--1">
                             <label className="contact__form--group--1--label" htmlFor="email">
                                 Wpisz swój email
@@ -148,7 +165,7 @@ import {useState} from "react";
                             />
                         </div>
                     </div>
-
+                    <div className="error-message">{errors.email}</div>
                     <div className="contact__form--msg">
                         <label className="contact__form--msg--label2" htmlFor="message">
                             Wpisz swoją wiadomość
@@ -172,7 +189,7 @@ import {useState} from "react";
                     </textarea>
                     </div>
 
-                    {error && <div className="error-message">{error}</div>}
+                     <div className="error-message">{errors.message}</div>
 
                     <button
                         className="contact__btn"

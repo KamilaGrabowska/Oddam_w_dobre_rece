@@ -107,7 +107,7 @@
         color: $color-dark-grey;
         opacity: 1;
         font-weight: 600;
-        margin-left: px-to-rem(970px);
+        margin-left: px-to-rem(950px);
       }
 
       &--in2 {
@@ -115,7 +115,7 @@
         margin-bottom: px-to-rem(4px);
         resize: none;
         color: $color-dark-grey;
-        margin-left: px-to-rem(969px);
+        margin-left: px-to-rem(950px);
 
       }
       ::-webkit-input-placeholder { /* Edge */
@@ -192,6 +192,8 @@
     font-family:$font-base;
     font-size: px-to-rem(11px);
     font-weight: 400;
+    margin-top: px-to-rem(10px);
+    //margin-left: px-to-rem(950px);
   }
 
 
