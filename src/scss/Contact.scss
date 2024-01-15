@@ -187,6 +187,13 @@
     }
   }
 
+  .error-message{
+    color: red;
+    font-family:$font-base;
+    font-size: px-to-rem(11px);
+    font-weight: 400;
+  }
+
 
 }
 

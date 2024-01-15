@@ -3,79 +3,90 @@ import background from '../../assets/images/background.png'
 import decoration from '../../assets/images/decoration.png'
 import Istagram from '../../assets/images/Istagram.png'
 import Facebook from '../../assets/images/Facebook.png'
+import {useState} from "react";
 
-// document.getElementById('contactForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//
-//     const name = document.getElementById('name').value;
-//     const email = document.getElementById('email').value;
-//     const message = document.getElementById('message').value;
-//
-//     const data = {
-//         name,
-//         email,
-//         message
-//     };
-//
-// let formErrors = [];
-//
-//     if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-//         formErrors.push('Proszę wypełnić wszystkie pola');
-//         return;
-//     }
-//
-//     if (name.split(' ').length > 1) {
-//         formErrors.push('Imię powinno być jednym wyrazem');
-//         return;
-//     }
-//
-//     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     if (!emailPattern.test(email)) {
-//         formErrors.push('Proszę podać poprawny adres email');
-//         return;
-//     }
-//
-//     if (message.length < 120) {
-//         formErrors.push('Wiadomość musi mieć co najmniej 120 znaków');
-//         return;
-//     }
-//
-//     fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(data)
-//     })
-//         .then(response => {
-//             if (response.ok) {
-//                 return response.json();
-//             }
-//             throw new Error('Wystąpił problem z wysłaniem danych.');
-//         })
-//         .then(responseData => {
-//             if (responseData.status === 'success') {
-//                 displayStatus('Formularz został wysłany pomyślnie!', 'success');
-//                 document.getElementById('contactForm').reset(); // Wyczyszczenie formularza po wysłaniu
-//             } else {
-//                 throw new Error('Wystąpił problem z wysłaniem danych.');
-//             }
-//         })
-//         .catch(error => {
-//             displayStatus('Wystąpił problem z wysłaniem formularza: ' + error.message);
-//         });
-// });
-//
-// // Funkcja do wyświetlania komunikatów statusu
-// function displayStatus(message, type = 'error') {
-//     const statusElement = document.getElementById('status');
-//     statusElement.textContent = message;
-//     statusElement.className = type;
-// }
-//
-//
+
+
 
     const Contact = () => {
+
+        const [error, setError] = useState(null);
+        const [form, setForm] = useState({
+            email: '',
+            name: '',
+            message: '',
+        });
+
+        const validateForm = () => {
+            if (form.name.trim() === '' || form.email.trim() === '' || form.message.trim() === '') {
+                return 'Wszystkie pola są wymagane';
+            }
+
+            if (form.name.split(' ').length > 1) {
+                return 'Imię powinno być jednym wyrazem';
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(form.email)) {
+                return 'Podany email jest niepoprawny';
+            }
+
+            if (form.message.length < 120) {
+                return 'Wiadomość musi mieć co najmniej 120 znaków';
+            }
+
+            return null;
+        };
+
+        const handleSubmit = async (e) => {
+            e.preventDefault();
+
+            const validationError = validateForm();
+            if (validationError) {
+                setError(validationError);
+                return;
+            }
+
+            try {
+                const response = await fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(form),
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.errors.join('\n'));
+                }
+
+                const responseData = await response.json();
+
+                if (responseData.status === 'success') {
+                    setError(null);
+                    console.log('Formularz został wysłany pomyślnie!');
+                    setForm({
+                        email: '',
+                        name: '',
+                        message: '',
+                    });
+                } else {
+                    throw new Error('Wystąpił problem z wysłaniem danych.');
+                }
+            } catch (error) {
+                setError(error.message);
+            }
+        };
+
+        const updateField = (e) => {
+            setForm({
+                ...form,
+                [e.target.name]: e.target.value,
+            });
+        };
+
+
         return (
             <section className="contact__section">
 
@@ -96,7 +107,7 @@ import Facebook from '../../assets/images/Facebook.png'
                     />
                 </div>
 
-                <form action="" className="contact__form">
+                <form action="" className="contact__form" onSubmit={handleSubmit}>
                     <div className="contact__form--group">
                         <div className="contact__form--group--1">
                             <label className="contact__form--group--1--label" htmlFor="name">
@@ -104,9 +115,11 @@ import Facebook from '../../assets/images/Facebook.png'
                             </label>
                             <input
                                 type="text"
+                                name="name"
                                 id="name"
                                 placeholder="Krzysztof"
                                 className="contact__form--group--1--in"
+                                onChange={updateField }
                                 style={{
                                     border: 'none',
                                     borderBottom: '1px solid rgba(115, 115, 115, 1)',
@@ -122,9 +135,11 @@ import Facebook from '../../assets/images/Facebook.png'
                             </label>
                             <input
                                 type="email"
+                                name="email"
                                 id="email"
                                 placeholder="abc@xyz.pl"
                                 className="contact__form--group--1--in"
+                                onChange={updateField }
                                 style={{
                                     border: 'none',
                                     borderBottom: '1px solid rgba(112, 112, 112, 1)',
@@ -143,7 +158,7 @@ import Facebook from '../../assets/images/Facebook.png'
                             id="message"
                             name="message"
                             placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
+                            onChange={updateField }
                             style={{
                                 border: 'none',
                                 borderBottom: '1px solid rgba(112, 112, 112, 1)',
@@ -156,6 +171,8 @@ import Facebook from '../../assets/images/Facebook.png'
 
                     </textarea>
                     </div>
+
+                    {error && <div className="error-message">{error}</div>}
 
                     <button
                         className="contact__btn"

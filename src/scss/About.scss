@@ -22,8 +22,6 @@
       margin: auto;
 
 
-
-
       .hdl {
         @include flex(center);
         text-align: center;
@@ -42,6 +40,7 @@
         height: px-to-rem(33px);
       }
 
+
       .info {
         @include flex(center, wrap);
         text-align: center;
@@ -52,7 +51,6 @@
         line-height: 3.0rem;
         width: auto;
         height: auto;
-
 
       }
 
