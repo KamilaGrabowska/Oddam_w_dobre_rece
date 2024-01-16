@@ -112,7 +112,7 @@
       background: $color-light_second-grey 0% 0% no-repeat padding-box;
       width: px-to-rem(395px);
       height: px-to-rem(245px);
-      margin-top: px-to-rem(67px);
+      margin-top: px-to-rem(80px);
 
       &--label {
         font-family:$font-login-label;
@@ -137,10 +137,13 @@
     }
 
     .login__btn {
-      margin-top: px-to-rem(40px);
+
+      margin-top: px-to-rem(370px);
+      position: absolute;
 
 
       &--addAccount {
+        position: relative;
         margin-right: px-to-rem(293px);
         font-family:$font-base;
         font-size:$base-font-size;
@@ -150,6 +153,8 @@
         background-color: white;
         border: transparent;
         text-decoration: none;
+
+
       }
 
       &--LoggIn {
@@ -166,7 +171,28 @@
       }
 
       }
+
     }
+
+
+
+  .error-message__email{
+    color: red;
+    font-family:$font-login-label;
+    font-size: px-to-rem(12px);
+    font-weight: 500;
+    margin-right: px-to-rem(185px);
+  }
+
+  .error-message__password{
+    color: red;
+    font-family:$font-login-label;
+    font-size: px-to-rem(12px);
+    font-weight: 500;
+    margin-right: px-to-rem(120px);
+
+  }
+
 
   }
 

@@ -90,7 +90,7 @@ const Login = () => {
                         value={login}
                         onChange={handleLoginChange}
                     />
-                    <div className="error-message">{errors.email}</div> <br />
+                    <div className="error-message__email">{errors.email}</div> <br />
                     <label className="login__form--label"> Hasło </label> <br />
                     <input
                         type="password"
@@ -99,17 +99,22 @@ const Login = () => {
                         value={password}
                         onChange={handlePasswordChange}
                     />
-                    <div className="error-message">{errors.password}</div>
-                </form>
+                    <div className="error-message__password">{errors.password}</div>
+
 
                 <div className="login__btn">
                     <Link to="/Register" className="login__btn--addAccount">
                         Załóż konto
                     </Link>
-                    <button type="submit" className="login__btn--LoggIn">
+                    <button
+                        type="submit"
+                        className="login__btn--LoggIn"
+
+                    >
                         Zaloguj się
                     </button>
                 </div>
+            </form>
             </div>
         </section>
     );
