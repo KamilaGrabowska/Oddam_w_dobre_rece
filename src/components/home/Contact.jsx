@@ -50,6 +50,8 @@ import {useState} from "react";
             return Object.values(newErrors).every((error) => error === '');
         };
 
+
+
         const handleSubmit = async (e) => {
             e.preventDefault();
 
@@ -103,6 +105,8 @@ import {useState} from "react";
             });
         };
 
+        // W przypadku udanej wysyłki formularza, stan jest zresetowany, a w przypadku błędów, błędy są wyświetlane w odpowiednich miejscach.
+
 
         return (
             <section className="contact__section">
@@ -134,6 +138,7 @@ import {useState} from "react";
                                 type="text"
                                 name="name"
                                 id="name"
+                                value={form.name}
                                 placeholder="Krzysztof"
                                 className="contact__form--group--1--in"
                                 onChange={updateField }
@@ -157,6 +162,7 @@ import {useState} from "react";
                                 type="email"
                                 name="email"
                                 id="email"
+                                value={form.email}
                                 placeholder="abc@xyz.pl"
                                 className="contact__form--group--1--in"
                                 onChange={updateField }
@@ -178,6 +184,7 @@ import {useState} from "react";
                             className="contact__form--msg--in2"
                             id="message"
                             name="message"
+                            value={form.message}
                             placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                             onChange={updateField }
                             style={{
