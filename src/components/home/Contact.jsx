@@ -144,8 +144,11 @@ import {useState} from "react";
 
                                 }}
                             />
+                            <div className="error-message__name">{errors.name}</div>
                         </div>
-                        <div className="error-message">{errors.name}</div>
+
+
+
                         <div className="contact__form--group--1">
                             <label className="contact__form--group--1--label" htmlFor="email">
                                 Wpisz swój email
@@ -163,9 +166,10 @@ import {useState} from "react";
 
                                 }}
                             />
+                            <div className="error-message__email">{errors.email}</div>
                         </div>
                     </div>
-                    <div className="error-message">{errors.email}</div>
+
                     <div className="contact__form--msg">
                         <label className="contact__form--msg--label2" htmlFor="message">
                             Wpisz swoją wiadomość
@@ -185,11 +189,11 @@ import {useState} from "react";
                             }}
 
                         >
-
                     </textarea>
+                        <div className="error-message__textarea">{errors.message}</div>
                     </div>
 
-                     <div className="error-message">{errors.message}</div>
+
 
                     <button
                         className="contact__btn"
