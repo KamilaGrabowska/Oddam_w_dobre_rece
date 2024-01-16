@@ -5,7 +5,7 @@
 
 
 .login__section {
-  width: 1900px;
+  width: auto;
   height: 946px;
   background: $base-color-primary no-repeat padding-box;
   opacity: 1;
@@ -52,7 +52,8 @@
     a {
       font-size: $base-font-size;
       font-family: $font-base;
-      font-weight: 400;
+      font-weight: 300;
+      color: $color-dark-grey;
       letter-spacing: -0.36px;
       opacity: 1;
       margin-top: px-to-rem(25px);
@@ -61,9 +62,23 @@
       text-decoration: none;
       display: inline-block;
       border: solid px-to-rem(1px) transparent;
-      margin-inline: 15px;
-      color: $color-dark-grey;
+      margin-inline: px-to-rem(17px);
+      padding: px-to-rem(9px)  px-to-rem(5px)  px-to-rem(9px)  px-to-rem(5px);
 
+
+    }
+
+    a:hover {
+      border: px-to-rem(0.75px) solid $color-dark-grey;
+      opacity: 1;
+      text-decoration: none;
+      cursor: pointer;
+
+    }
+
+    &__item--active:after {
+      opacity: 0;
+      content: "";
     }
   }
 
