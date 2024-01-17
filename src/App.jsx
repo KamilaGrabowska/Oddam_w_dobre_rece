@@ -6,7 +6,7 @@ import LocalHome from './components/local/LocalHome.jsx'
 import LoggedInHome from './components/logged-in/LoggedInHome.jsx'
 import Login from './components/logowanie/Login.jsx'
 import Register from './components/rejestracja/Register.jsx';
-
+import Logout from './components/Logout/Logout.jsx'
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
                 {/*<Route path="/oddaj-rzeczy/krok-4" element={<FormStep4 />} />*/}
                 {/*<Route path="/oddaj-rzeczy/summary" element={<FormSummary />} />*/}
                 {/*<Route path="/oddaj-rzeczy/thank-you" element={<FormThankYou />} />*/}
-                {/*<Route path="/wylogowano" element={<Logout />} />*/}
+                <Route path="/logout" element={<Logout/>} />
             </Routes>
         </Router>
 
