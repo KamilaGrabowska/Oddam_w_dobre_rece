@@ -21,7 +21,7 @@ function App() {
                 <Route path="/Register" element={<Register/>}/>
                 <Route path="/organizations" element={<OrganizationsHome/>}/>
                 <Route path="/local" element={<LocalHome/>}/>
-                <Route path="/logged-in" element={<LoggedInHome/>}/>
+                <Route path="/LoggedInHome" element={<LoggedInHome/>}/>
                 {/*<Route path="/" element={<FormStep1/>}/>*/}
                 {/*<Route path="/" element={<FormStep2/>}/>*/}
                 {/*<Route path="/oddaj-rzeczy/krok-2/select" element={<FormStep2OpenedSelect />} />*/}
