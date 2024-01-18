@@ -1,6 +1,6 @@
 import '../../scss/Logout.scss'
 import decoration from "../../assets/images/decoration.png";
-
+import { Link as RouterLink } from 'react-router-dom';
 
 const Logout = ()=>{
 

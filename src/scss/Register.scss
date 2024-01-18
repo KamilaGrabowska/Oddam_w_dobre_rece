@@ -164,12 +164,13 @@
         font-size:$base-font-size;
         font-weight: 200;
         color: $color-black;
-        text-align: left;
+        text-align: center;
         background-color: white;
         border: px-to-rem(0.75px) solid $color-dark-grey;
-        width: px-to-rem(125px);
-        height: px-to-rem(60px);
-        padding: px-to-rem(13px) px-to-rem(6px);
+        width: px-to-rem(117px);
+        height: px-to-rem(30px);
+        padding: px-to-rem(13px) px-to-rem(8px);
+        text-decoration: none;
 
       }
     }
