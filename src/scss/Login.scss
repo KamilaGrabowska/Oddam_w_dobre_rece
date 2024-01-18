@@ -165,9 +165,11 @@
         text-align: left;
         background-color: white;
         border: px-to-rem(0.75px) solid $color-dark-grey;
-        width: px-to-rem(120px);
-        height: px-to-rem(50px);
+        width: px-to-rem(117px);
+        height: px-to-rem(22px);
         padding: px-to-rem(13px) px-to-rem(8px);
+        text-decoration: none;
+        text-align: center;
       }
 
       }
