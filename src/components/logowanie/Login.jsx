@@ -106,13 +106,14 @@ const Login = () => {
                     <Link to="/Register" className="login__btn--addAccount">
                         Załóż konto
                     </Link>
-                    <button
+                    <Link
+                        to="/LoggedInHome"
                         type="submit"
                         className="login__btn--LoggIn"
 
                     >
                         Zaloguj się
-                    </button>
+                    </Link>
                 </div>
             </form>
             </div>

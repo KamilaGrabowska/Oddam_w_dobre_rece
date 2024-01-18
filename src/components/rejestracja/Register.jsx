@@ -2,6 +2,7 @@ import {Link, Link as RouterLink} from "react-router-dom";
 import decoration from "../../assets/images/decoration.png";
 import '../../scss/Register.scss'
 import  { useState } from 'react';
+import LoggedInHome from "../logged-in/LoggedInHome.jsx";
 
 const Register = () => {
 
@@ -78,7 +79,7 @@ const Register = () => {
 
                 <div className="register__btn">
                     <Link to="/login" className="register__btn--addAccountR">Zaloguj się</Link>
-                    <Link  to= "/" type="submit" className="register__btn--LoggInR">Załóż konto</Link>
+                    <Link  to= "/LoggedInHome" type="submit" className="register__btn--LoggInR">Załóż konto</Link>
 
                 </div>
 
