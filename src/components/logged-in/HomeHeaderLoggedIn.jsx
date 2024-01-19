@@ -5,6 +5,7 @@ import '../../scss/HomeHeader.scss'
 import HeroImage from '../../assets/images/Hero_Image.png'
 import '../../scss/HomeHeaderLoggedIn.scss'
 
+
 const HomeHeaderLoggedIn = () => {
 
 
@@ -15,14 +16,16 @@ const HomeHeaderLoggedIn = () => {
                     <img className="hero__img" src={HeroImage} alt="Hero Image" align="left"/>
                 </div>
                 <div className="topMenu">
+                    <p className="topMenu__email"> Cześć krzysztof@gmail.com! </p>
 
-                    <p className="topMenu__email" >Cześć krzysztof@gmail.com! </p>
                     <RouterLink to="/Login" className="topMenu__item" href="">
                         <a className="topMenu__login">Oddaj rzeczy</a>
                     </RouterLink>
+
                     <RouterLink to="/Logout" className="topMenu__item" href="">
                         <a className="topMenu__add">Wyloguj</a>
                     </RouterLink>
+
 
                 </div>
 
