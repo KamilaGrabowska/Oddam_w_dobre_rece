@@ -1,0 +1,21 @@
+@import "settings/fonts";
+@import "settings/colors";
+@import "utils/functions";
+@import "utils/mixin";
+
+
+.topMenu__email {
+  color: $color-black;
+  font-size: px-to-rem(14px);
+  font-weight: 400;
+  font-family: $font-base;
+  width: px-to-rem(182px);
+  height: px-to-rem(20px);
+  text-align: right;
+  margin-right: px-to-rem(20px);
+  border: px-to-rem(0.75px) solid transparent;
+  opacity: 1;
+  margin-top: px-to-rem(4px);
+  padding: px-to-rem(9px) px-to-rem(10px);
+}
+
