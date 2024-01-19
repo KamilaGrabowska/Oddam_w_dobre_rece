@@ -1,6 +1,7 @@
 import '../../scss/Logout.scss'
 import decoration from "../../assets/images/decoration.png";
-import { Link as RouterLink } from 'react-router-dom';
+import {Link, Link as RouterLink} from 'react-router-dom';
+
 
 const Logout = ()=>{
 
@@ -23,13 +24,18 @@ const Logout = ()=>{
                 <a href="/">Kontakt</a>
             </div>
 
-            <div className="LogoutBox">
+            <div className="logoutBox">
                 <h1 className="logoutBox--hdl">Wylogowanie nastąpiło pomyślnie!</h1>
                 <img className="logoutBox--img" src={decoration} alt="Decoration" />
-                <a href="/">Strona główna</a>
-
+                <Link
+                    to="/"
+                    className="logoutBox--btn"
+                    type="submit"
+                >
+                    Strona główna</Link>
 
             </div>
+
 
         </section>
 );
